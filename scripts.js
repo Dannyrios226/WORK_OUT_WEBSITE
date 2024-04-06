@@ -33,7 +33,7 @@ let titles = [
     "Fresh Prince of Bel Air",
     "Curb Your Enthusiasm",
     "East Los High"
-    "Cardio"
+    "Rick and Morty"
     
 ];
 // Your final submission should have much more data than this, and 
