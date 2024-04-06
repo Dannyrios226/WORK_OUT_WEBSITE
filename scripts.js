@@ -32,7 +32,7 @@ const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/
 let titles = [
     "Chest",
     "Pull",
-    "Legs"
+    "Legs",
     "Cardio"
 ];
 // Your final submission should have much more data than this, and 
