@@ -33,7 +33,7 @@ let titles = [
     "Chest",
     "Pull",
     "Legs"
-    "Cardio
+    "Cardio"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
