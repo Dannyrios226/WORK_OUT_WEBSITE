@@ -179,66 +179,21 @@ function removeLastCard() {
 }
 
 
-// Function to display a random workout for a given category
-function displayRandomWorkout(category) {
-    let exercises;
-    switch (category) {
-        case "push":
-            exercises = getRandomExercises(pushExercises);
-            break;
-        case "pull":
-            exercises = getRandomExercises(pullExercises);
-            break;
-        case "legs":
-            exercises = getRandomExercises(legExercises);
-            break;
-        case "cardio":
-            exercises = getRandomExercises(cardioExercises);
-            break;
-        default:
-            console.error("Invalid category!");
-            return;
-    }
+// //Write One minute timer button code 
+// function oneMinuteRest(){
     
-    const message = exercises.map(exercise => `${exercise.name} (${exercise.difficulty})`).join("\n");
-   
-    alert("Random Workout:\n" + message);
-}
+// }
 
-
-function getRandomExercises(categoryExercises) {
-    let randomExercises = [];
-    for (let subcategory in categoryExercises) {
-        const exercises = categoryExercises[subcategory];
-        const randomIndex = Math.floor(Math.random() * exercises.length);
-        randomExercises.push(exercises[randomIndex]);
-    }
-    return randomExercises;
-}
-
-
-document.querySelectorAll(".random-workout-btn").forEach(button => {
-    const category = button.getAttribute("data-category");
-    button.addEventListener("click", () => {
-        displayRandomWorkout(category);
-    });
-});
-
-//Write One minute timer button code 
-function oneMinuteRest(){
+// //write two minute timer button code
+// function fourMinuteRest(){
     
-}
+// }
 
-//write two minute timer button code
-function fourMinuteRest(){
+// //write four minute timer button code
+// function fourMinuteRest(){
     
-}
+// }
 
-//write four minute timer button code
-function fourMinuteRest(){
-    
-}
-
-//write five minute timer button code
-function FiverMinuteRest(){
-}
+// //write five minute timer button code
+// function FiverMinuteRest(){
+// }
