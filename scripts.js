@@ -36,26 +36,26 @@ let titles = [
     "CARDIO" 
 ];
 
-const pushExercises = {
-    chest: [
-        { name: "Push-up", difficulty: "Beginner" },
-        { name: "Bench Press", difficulty: "Intermediate" },
-        { name: "Dumbbell Flyes", difficulty: "Intermediate" },
-        // Add more chest exercises as needed
-    ],
-    triceps: [
-        { name: "Tricep Dips", difficulty: "Intermediate" },
-        { name: "Tricep Extension", difficulty: "Intermediate" },
-        { name: "Skull Crushers", difficulty: "Intermediate" },
-        // Add more triceps exercises as needed
-    ],
-    shoulders: [
-        { name: "Overhead Press", difficulty: "Intermediate" },
-        { name: "Lateral Raises", difficulty: "Beginner" },
-        { name: "Front Raises", difficulty: "Beginner" },
-        // Add more shoulder exercises as needed
-    ]
-};
+// const pushExercises = {
+//     chest: [
+//         { name: "Push-up", difficulty: "Beginner" },
+//         { name: "Bench Press", difficulty: "Intermediate" },
+//         { name: "Dumbbell Flyes", difficulty: "Intermediate" },
+//         // Add more chest exercises as needed
+//     ],
+//     triceps: [
+//         { name: "Tricep Dips", difficulty: "Intermediate" },
+//         { name: "Tricep Extension", difficulty: "Intermediate" },
+//         { name: "Skull Crushers", difficulty: "Intermediate" },
+//         // Add more triceps exercises as needed
+//     ],
+//     shoulders: [
+//         { name: "Overhead Press", difficulty: "Intermediate" },
+//         { name: "Lateral Raises", difficulty: "Beginner" },
+//         { name: "Front Raises", difficulty: "Beginner" },
+//         // Add more shoulder exercises as needed
+//     ]
+// };
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
