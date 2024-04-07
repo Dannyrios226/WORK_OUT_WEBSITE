@@ -114,5 +114,5 @@ function fourMinuteRest(){
 }
 
 //write five minute timer button code
-function FiverMinuteRest(){
+function fiveMinuteRest(){
 }
