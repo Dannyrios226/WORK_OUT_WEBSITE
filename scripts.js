@@ -26,6 +26,7 @@ const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
 const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
+
 // This is an array of strings (TV show titles)
 let titles = [
     "PUSH",
@@ -33,6 +34,30 @@ let titles = [
     "LEGS",
     "CARDIO" 
 ];
+
+const workoutData = [
+  {
+    title: "PUSH",
+    imageURL: FRESH_PRINCE_URL,
+    bulletPoints: ["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"],
+  },
+  {
+    title: "PULL",
+    imageURL: CURB_POSTER_URL,
+    bulletPoints: ["Another Bullet Point", "And Another One", "One More"],
+  },
+  {
+    title: "LEGS",
+    imageURL: EAST_LOS_HIGH_POSTER_URL, // Customize image URL for Legs
+    bulletPoints: ["Leg Bullet Point 1", "Leg Bullet Point 2", "Leg Bullet Point 3"],
+  },
+  {
+    title: "CARDIO",
+    imageURL: Cardio_URL,
+    bulletPoints: ["Cardio Bullet Point 1", "Cardio Bullet Point 2", "Cardio Bullet Point 3"],
+  },
+];
+
 const pushExercises = {
     chest: [
         { name: "Push-up", difficulty: "Beginner" },
@@ -116,57 +141,31 @@ const cardioExercises = {
 // you should use more than just an array of strings to store it all.
 // This function adds cards the page to display the data in the array
 function showCards() {
-    const cardContainer = document.getElementById("card-container");
-    cardContainer.innerHTML = "";
-    const templateCard = document.querySelector(".card");
-    
-   for (let i = 0; i < titles.length; i++) {
-        let title = titles[i];
-       if (title === "PUSH") {
-            imageURL = FRESH_PRINCE_URL;
-        } else if (title === "PULL") {
-            imageURL = CURB_POSTER_URL;
-        } else if (title === "LEGS") {
-            imageURL = EAST_LOS_HIGH_POSTER_URL;
-        } else if (title === "CARDIO") {
-            imageURL = Cardio_URL;
-        }
-       
-        let bulletPoints;
-        // Define bullet points for each card
-        switch (title) {
-            case "PUSH":
-                bulletPoints = ["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"];
-                break;
-            case "PULL":
-                bulletPoints = ["Another Bullet Point", "And Another One", "One More"];
-                break;
-            case "LEGS":
-                bulletPoints = ["Different Bullet Point", "More Content Here", "Yet Another Point"];
-                break;
-            case "CARDIO":
-                bulletPoints = ["Cardio Point 1", "Cardio Point 2", "Cardio Point 3"];
-                break;
-            default:
-                bulletPoints = [];
-                break;
-        }
-        
-        const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, imageURL); // Edit title and image
-        cardContainer.appendChild(nextCard); // Add new card to the container
-    }
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector(".card");
+
+  for (let i = 0; i < workoutData.length; i++) {
+    const workout = workoutData[i]; // Access each workout object
+    const nextCard = templateCard.cloneNode(true);
+
+    editCardContent(nextCard, workout.title, workout.imageURL);
+    addBulletPoints(nextCard, workout.bulletPoints); // Pass bulletPoints array
+
+    cardContainer.appendChild(nextCard);
+  }
 }
 
 function addBulletPoints(card, bulletPoints) {
-    const ul = card.querySelector("ul");
-    ul.innerHTML = ""; 
-    bulletPoints.forEach(point => {
-        const li = document.createElement("li");
-        li.textContent = point;
-        ul.appendChild(li);
-    });
+  const ul = card.querySelector("ul");
+  ul.innerHTML = "";
+  bulletPoints.forEach(point => {
+    const li = document.createElement("li");
+    li.textContent = point;
+    ul.appendChild(li);
+  });
 }
+ document.addEventListener("DOMContentLoaded", showCards);      
 
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
