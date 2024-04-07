@@ -48,15 +48,14 @@ function showCards() {
     for (let i = 0; i < titles.length; i++) {
         let title = titles[i];
 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
-        let imageURL = "";
-        if (i == 0) {
+       if (title === "PUSH") {
             imageURL = FRESH_PRINCE_URL;
-        } else if (i == 1) {
+        } else if (title === "PULL") {
             imageURL = CURB_POSTER_URL;
-        } else if (i == 2) {
+        } else if (title === "LEGS") {
             imageURL = EAST_LOS_HIGH_POSTER_URL;
+        } else if (title === "CARDIO") {
+            imageURL = Cardio_URL;
         }
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
