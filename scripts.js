@@ -25,7 +25,7 @@
 
 
 const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
-const CURB_POSTER_URL = "https://www.amazon.com/NIUMOWANG-Mentzer-Universe-Bodybuilding-Vintage/dp/B09C8YXVRT";
+const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
 const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
 // This is an array of strings (TV show titles)
