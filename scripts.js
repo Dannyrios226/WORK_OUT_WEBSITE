@@ -12,7 +12,7 @@
  * - 1 - Change something small in index.html or style.css, then reload your 
  *    browser and make sure you can see that change. 
  * - 2 - On your browser, right click anywhere on the page and select
- *    "Inspect" to open the browser developer tools. Then, go to the "console"
+ *    "Inspect" to open the browser developer tools. Then, go to the "console" 
  *    tab in the new window that opened up. This console is where you will see
  *    JavaScript errors and logs, which is extremely helpful for debugging.
  *    (These instructions assume you're using Chrome, opening developer tools
