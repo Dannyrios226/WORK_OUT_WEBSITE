@@ -35,25 +35,6 @@ let titles = [
     "LEGS",
     "CARDIO" 
 ];
-
-const pushExercises = {
-    chest: [
-        {name: "Push-up", difficulty: "Beginner" },
-        {name: "Bench Press", difficulty: "intermediate" },
-        {name: "Dumbbell Flys", difficulty: "Intermediate" }
-    ],
-    triceps: [
-        {name: "Tricep Dips", difficulty: "Intermediate" },
-        {name: "Tricep Extension", difficulty: "intermediate"},
-        {name: "Skull Crushers", difficulty: "Intermediate"},
-    ],
-    shoulders: [
-        {name: "Overhead Press", difficulty: "Intermediate" },
-        {name: "Lateral Raises", difficulty: "Beginner"},
-        {name: "Front Raises", difficuilty: "Beginner",
-   ]
-};
-        
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
@@ -113,17 +94,8 @@ function removeLastCard() {
 }
 
 //write Random Mixed workout Code
-function getRandomExercises(pushExercises,cout) {
-    let AllExercises = [];
-    for(let category in pushExercises) {
-        let excercises = pushExercises[category];
-        exercises = exercises.sort(() => Math.random() - 0.5;
-        allExercises = Exercises.concat(exercises.slice(0,Math,ceil(count / Object.keys(pushExercises).length)));
-    } 
-
-    allExercises = allExercises.sort(() => Math.random() - 0.5);
-
-    return allExercises.slice(0,count);
+function randomMixedWorkout() {
+    
 }
 
 //Write One minute timer button code 
