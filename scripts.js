@@ -56,6 +56,70 @@ const pushExercises = {
   
     ]
 };
+
+const pullExercises = {
+    back: [
+        { name: "Pull-up", difficulty: "Intermediate" },
+        { name: "Deadlift", difficulty: "Intermediate" },
+        { name: "Barbell Row", difficulty: "Intermediate" },
+     
+    ],
+    biceps: [
+        { name: "Bicep Curl", difficulty: "Beginner" },
+        { name: "Hammer Curl", difficulty: "Beginner" },
+        { name: "Preacher Curl", difficulty: "Intermediate" },
+ 
+    ],
+    traps: [
+        { name: "Dumbbell Shrugs", difficulty: "Beginner" },
+        { name: "Barbell Shrugs", difficulty: "Intermediate" },
+        { name: "Up right rows", difficulty: "Intermediate" },
+  
+    ]
+};
+
+const legExercises = {
+    quads: [
+        { name: "Squats", difficulty: "Intermediate" },
+        { name: "Leg Press", difficulty: "Intermediate" },
+        { name: "Lunges", difficulty: "Intermediate" },
+      
+    ],
+    hamstrings: [
+        { name: "KettleBell Swings", difficulty: "Intermediate" },
+        { name: "Leg Curls", difficulty: "Intermediate" },
+        { name: "Split Squats", difficulty: "Intermediate" },
+     
+    ],
+    glutes: [
+        { name: "Hip Thrusts", difficulty: "Intermediate" },
+        { name: "Glute Bridge", difficulty: "Beginner" },
+        { name: "Hip Extention", difficulty: "Beginner" },
+    ]
+};
+
+const cardioExercises = {
+    "15-minute": [
+        { name: "Jump Rope", difficulty: "Beginner" },
+        { name: "High Knees", difficulty: "Beginner" },
+        { name: "Burpees", difficulty: "Intermediate" },
+     
+    ],
+    "30-minute": [
+        { name: "jogging", difficulty: "Intermediate" },
+        { name: "rowing", difficulty: "Intermediate" },
+        { name: "Elliptical", difficulty: "Intermediate" },
+      
+    ],
+    "45-minute": [
+        { name: "Swimming", difficulty: "Intermediate" },
+        { name: "biking", difficulty: "Intermediate" },
+        { name: "walking", difficulty: "beginer" },
+        
+    ]
+};
+
+
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
