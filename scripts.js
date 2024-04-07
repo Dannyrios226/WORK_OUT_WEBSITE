@@ -157,6 +157,17 @@ function showCards() {
         cardContainer.appendChild(nextCard); // Add new card to the container
     }
 }
+
+function addBulletPoints(card, bulletPoints) {
+    const ul = card.querySelector("ul");
+    ul.innerHTML = ""; // Clear existing bullet points
+    bulletPoints.forEach(point => {
+        const li = document.createElement("li");
+        li.textContent = point;
+        ul.appendChild(li);
+    });
+}
+
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
     const cardHeader = card.querySelector("h2");
