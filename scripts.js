@@ -71,7 +71,7 @@ function editCardContent(card, newTitle, newImageURL) {
     cardHeader.textContent = newTitle;
 
     const cardButton = card.querySelector("button");
-    cardbutton.style = newBackgroundImage = `url('${NewImageURL}')`;
+    cardButton.sytle.backgroundImage = newBackgroundImage = `url('${newImageURL}')`;
     carButton.textContent = "";
 
     // You can use console.log to help you debug!
@@ -103,15 +103,15 @@ function handleButtonClick(button) {
 }
 
 // THIS FUNCTION WILL GET WORKOUT ROUTINE BASED ON IMAGE THAT IS CLICKED ON
-function getrWOrkoutRoutine(title) { 
-    const workoutRoutine = {
+function getWorkoutRoutine(title) { 
+    const workoutRoutines = {
         "PUSH": "PUSH WORKOUT",
         "PULL": "PULL WORKOUT",
         "LEGS": "LEG WORKOUT",
         "CARDIO": "CARDIO WORKOUT"
     };
 
-    return workoutROutine[Title];
+    return workoutROutine[title];
         
         
     
