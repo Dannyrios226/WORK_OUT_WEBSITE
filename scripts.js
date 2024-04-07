@@ -158,10 +158,40 @@ function editCardContent(card, newTitle, newImageURL) {
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
     cardImage.alt = newTitle + " Poster";
+    
+    const cardContent = card.querySelector(".card-content");
+    cardContent.innerHTML = ""; 
 
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
+    const bulletPoints = document.createElement("ul");
+
+    if (newTitle === "PUSH") {
+        bulletPoints.innerHTML = `
+            <li> A Push workout involves the Chest, Triceps, and Shoulders</li> 
+            <li>Triceps workout: Tricep Dips, Tricep Extension, Skull Crushers</li>
+            <li>Shoulders workout: Overhead Press, Lateral Raises, Front Raises</li>
+        `;
+    } else if (newTitle === "PULL") {
+        bulletPoints.innerHTML = `
+            <li>Back workout: Pull-up, Deadlift, Barbell Row</li>
+            <li>Biceps workout: Bicep Curl, Hammer Curl, Preacher Curl</li>
+            <li>Traps workout: Dumbbell Shrugs, Barbell Shrugs, Up right rows</li>
+        `;
+    } else if (newTitle === "LEGS") {
+        bulletPoints.innerHTML = `
+            <li>Quads workout: Squats, Leg Press, Lunges</li>
+            <li>Hamstrings workout: KettleBell Swings, Leg Curls, Split Squats</li>
+            <li>Glutes workout: Hip Thrusts, Glute Bridge, Hip Extention</li>
+        `;
+    } else if (newTitle === "CARDIO") {
+        bulletPoints.innerHTML = `
+            <li>15-minute cardio: Jump Rope, High Knees, Burpees</li>
+            <li>30-minute cardio: jogging, rowing, Elliptical</li>
+            <li>45-minute cardio: Swimming, biking, walking</li>
+        `;
+    }
+
+    cardContent.appendChild(bulletPoints);
+
     console.log("new card:", newTitle, "- html: ", card);
 }
 
