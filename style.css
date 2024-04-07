@@ -68,3 +68,6 @@ button {
     cursor: pointer;
     margin: 5px;
 }
+li {
+  margin-bottom: 5px; /* Adjust spacing as needed */
+}
