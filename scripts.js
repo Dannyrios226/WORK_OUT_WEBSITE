@@ -22,8 +22,6 @@
  *    with the string you added to the array, but a broken image.
  * 
  */
-
-
 const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
@@ -35,7 +33,6 @@ let titles = [
     "LEGS",
     "CARDIO" 
 ];
-
 const pushExercises = {
     chest: [
         { name: "Push-up", difficulty: "Beginner" },
@@ -56,7 +53,6 @@ const pushExercises = {
   
     ]
 };
-
 const pullExercises = {
     back: [
         { name: "Pull-up", difficulty: "Intermediate" },
@@ -77,7 +73,6 @@ const pullExercises = {
   
     ]
 };
-
 const legExercises = {
     quads: [
         { name: "Squats", difficulty: "Intermediate" },
@@ -97,7 +92,6 @@ const legExercises = {
         { name: "Hip Extention", difficulty: "Beginner" },
     ]
 };
-
 const cardioExercises = {
     "15-minute": [
         { name: "Jump Rope", difficulty: "Beginner" },
@@ -118,12 +112,8 @@ const cardioExercises = {
         
     ]
 };
-
-
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
-
-
 // This function adds cards the page to display the data in the array
 function showCards() {
     const cardContainer = document.getElementById("card-container");
@@ -132,7 +122,6 @@ function showCards() {
     
    for (let i = 0; i < titles.length; i++) {
         let title = titles[i];
-
        if (title === "PUSH") {
             imageURL = FRESH_PRINCE_URL;
         } else if (title === "PULL") {
@@ -142,83 +131,107 @@ function showCards() {
         } else if (title === "CARDIO") {
             imageURL = Cardio_URL;
         }
-
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, imageURL); // Edit title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
     }
 }
-
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
-
     const cardHeader = card.querySelector("h2");
     cardHeader.textContent = newTitle;
-
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
     cardImage.alt = newTitle + " Poster";
-
-    const cardContent = card.querySelector(".card-content");
-
-    const bulletPoints = document.createElement("ul");
-
-    if (newTitle === "PUSH") {
-        bulletPoints.innerHTML = `
-            <li>Chest workout: Push-up, Bench Press, Dumbbell Flyes</li>
-            <li>Triceps workout: Tricep Dips, Tricep Extension, Skull Crushers</li>
-            <li>Shoulders workout: Overhead Press, Lateral Raises, Front Raises</li>
-        `;
-    } else if (newTitle === "PULL") {
-        bulletPoints.innerHTML = `
-            <li>Back workout: Pull-up, Deadlift, Barbell Row</li>
-            <li>Biceps workout: Bicep Curl, Hammer Curl, Preacher Curl</li>
-            <li>Traps workout: Dumbbell Shrugs, Barbell Shrugs, Up right rows</li>
-        `;
-    } else if (newTitle === "LEGS") {
-        bulletPoints.innerHTML = `
-            <li>Quads workout: Squats, Leg Press, Lunges</li>
-            <li>Hamstrings workout: KettleBell Swings, Leg Curls, Split Squats</li>
-            <li>Glutes workout: Hip Thrusts, Glute Bridge, Hip Extention</li>
-        `;
-    } else if (newTitle === "CARDIO") {
-        bulletPoints.innerHTML = `
-            <li>15-minute cardio: Jump Rope, High Knees, Burpees</li>
-            <li>30-minute cardio: jogging, rowing, Elliptical</li>
-            <li>45-minute cardio: Swimming, biking, walking</li>
-        `;
-    }
-
-
-    cardContent.appendChild(bulletPoints);
+    // You can use console.log to help you debug!
+    // View the output by right clicking on your website,
+    // select "Inspect", then click on the "Console" tab
+    console.log("new card:", newTitle, "- html: ", card);
 }
-
+// This calls the addCards() function when the page is first loaded
+document.addEventListener("DOMContentLoaded", showCards);
 function quoteAlert() {
     console.log("Button Clicked!")
     alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
 }
-
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
 
 
+// Function to display a random workout for a given category
+function displayRandomWorkout(category) {
+    let exercises;
+    switch (category) {
+        case "push":
+            exercises = getRandomExercises(pushExercises);
+            break;
+        case "pull":
+            exercises = getRandomExercises(pullExercises);
+            break;
+        case "legs":
+            exercises = getRandomExercises(legExercises);
+            break;
+        case "cardio":
+            exercises = getRandomExercises(cardioExercises);
+            break;
+        default:
+            console.error("Invalid category!");
+            return;
+    }
+
+    const message = exercises.map(exercise => `${exercise.name} (${exercise.difficulty})`).join("\n");
+
+    alert("Random Workout:\n" + message);
+}
+
+
+function getRandomExercises(categoryExercises) {
+    let randomExercises = [];
+    for (let subcategory in categoryExercises) {
+        const exercises = categoryExercises[subcategory];
+        const randomIndex = Math.floor(Math.random() * exercises.length);
+        randomExercises.push(exercises[randomIndex]);
+    }
+    return randomExercises;
+}
+
+
+document.querySelectorAll(".random-workout-btn").forEach(button => {
+    const category = button.getAttribute("data-category");
+    button.addEventListener("click", () => {
+        displayRandomWorkout(category);
+    });
+});
+
+//Write One minute timer button code 
+function oneMinuteRest(){
 // //Write One minute timer button code 
 // function oneMinuteRest(){
-    
+
+}
 // }
 
+//write two minute timer button code
+function fourMinuteRest(){
 // //write two minute timer button code
 // function fourMinuteRest(){
-    
+
+}
 // }
 
+//write four minute timer button code
+function fourMinuteRest(){
 // //write four minute timer button code
 // function fourMinuteRest(){
-    
+
+}
 // }
 
+//write five minute timer button code
+function FiverMinuteRest(){
+}
 // //write five minute timer button code
 // function FiverMinuteRest(){
 // }
