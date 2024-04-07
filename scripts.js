@@ -158,15 +158,14 @@ function editCardContent(card, newTitle, newImageURL) {
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
     cardImage.alt = newTitle + " Poster";
-    
+
     const cardContent = card.querySelector(".card-content");
-    cardContent.innerHTML = ""; 
 
     const bulletPoints = document.createElement("ul");
 
     if (newTitle === "PUSH") {
         bulletPoints.innerHTML = `
-            <li> A Push workout involves the Chest, Triceps, and Shoulders</li> 
+            <li>Chest workout: Push-up, Bench Press, Dumbbell Flyes</li>
             <li>Triceps workout: Tricep Dips, Tricep Extension, Skull Crushers</li>
             <li>Shoulders workout: Overhead Press, Lateral Raises, Front Raises</li>
         `;
@@ -190,13 +189,9 @@ function editCardContent(card, newTitle, newImageURL) {
         `;
     }
 
+
     cardContent.appendChild(bulletPoints);
-
-    console.log("new card:", newTitle, "- html: ", card);
 }
-
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
 
 function quoteAlert() {
     console.log("Button Clicked!")
