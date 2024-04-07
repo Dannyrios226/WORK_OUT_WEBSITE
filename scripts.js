@@ -192,34 +192,6 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
-
-// Function to display a random workout for a given category
-function displayRandomWorkout(category) {
-    let exercises;
-    switch (category) {
-        case "push":
-            exercises = getRandomExercises(pushExercises);
-            break;
-        case "pull":
-            exercises = getRandomExercises(pullExercises);
-            break;
-        case "legs":
-            exercises = getRandomExercises(legExercises);
-            break;
-        case "cardio":
-            exercises = getRandomExercises(cardioExercises);
-            break;
-        default:
-            console.error("Invalid category!");
-            return;
-    }
-
-    const message = exercises.map(exercise => `${exercise.name} (${exercise.difficulty})`).join("\n");
-
-    alert("Random Workout:\n" + message);
-}
-
-
 function getRandomExercises(categoryExercises) {
     let randomExercises = [];
     for (let subcategory in categoryExercises) {
