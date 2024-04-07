@@ -160,7 +160,7 @@ function showCards() {
 
 function addBulletPoints(card, bulletPoints) {
     const ul = card.querySelector("ul");
-    ul.innerHTML = ""; // Clear existing bullet points
+    ul.innerHTML = ""; 
     bulletPoints.forEach(point => {
         const li = document.createElement("li");
         li.textContent = point;
