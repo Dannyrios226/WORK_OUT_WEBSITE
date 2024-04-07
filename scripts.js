@@ -131,6 +131,27 @@ function showCards() {
         } else if (title === "CARDIO") {
             imageURL = Cardio_URL;
         }
+       
+        let bulletPoints;
+        // Define bullet points for each card
+        switch (title) {
+            case "PUSH":
+                bulletPoints = ["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"];
+                break;
+            case "PULL":
+                bulletPoints = ["Another Bullet Point", "And Another One", "One More"];
+                break;
+            case "LEGS":
+                bulletPoints = ["Different Bullet Point", "More Content Here", "Yet Another Point"];
+                break;
+            case "CARDIO":
+                bulletPoints = ["Cardio Point 1", "Cardio Point 2", "Cardio Point 3"];
+                break;
+            default:
+                bulletPoints = [];
+                break;
+        }
+        
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, imageURL); // Edit title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
@@ -150,6 +171,7 @@ function editCardContent(card, newTitle, newImageURL) {
 }
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
+
 function quoteAlert() {
     console.log("Button Clicked!")
     alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
