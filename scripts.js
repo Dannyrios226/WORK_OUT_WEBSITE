@@ -92,3 +92,26 @@ function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
+
+//    THIS FUNCTION WILL HANDLE THE BUTTON WHEN CLICKING A WORKOUT
+function handleButtonClick(button) { 
+    const title = button.getAttribute('data-title');
+
+    const workoutRoutine = getWorkoutRoutine(title);
+
+    alert("You have chosen a workout!");
+}
+
+// THIS FUNCTION WILL GET WORKOUT ROUTINE BASED ON IMAGE THAT IS CLICKED ON
+function getrWOrkoutRoutine(title) { 
+    const workoutRoutine = {
+        "PUSH": "PUSH WORKOUT",
+        "PULL": "PULL WORKOUT",
+        "LEGS": "LEG WORKOUT",
+        "CARDIO": "CARDIO WORKOUT"
+    };
+
+    return workoutROutine[Title];
+        
+        
+    
