@@ -24,10 +24,10 @@
  */
 
 
-const FRESH_PRINCE_URL = "https://drive.google.com/file/d/1MNyCM79ivIE8qfOU-Z8u3c9cq-jZCecv/view?usp=sharing";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-
+const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
+const CURB_POSTER_URL = "https://www.amazon.com/NIUMOWANG-Mentzer-Universe-Bodybuilding-Vintage/dp/B09C8YXVRT";
+const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
+const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
 // This is an array of strings (TV show titles)
 let titles = [
     "PUSH",
