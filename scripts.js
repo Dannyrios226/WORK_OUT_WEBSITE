@@ -92,3 +92,6 @@ function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
+
+function randomMixedWorkout() {
+}
