@@ -71,7 +71,7 @@ function editCardContent(card, newTitle, newImageURL) {
     cardHeader.textContent = newTitle;
 
     const cardButton = card.querySelector("button");
-    cardbutton.style = newBackgroundImage = 'url('NewImageURL}')';
+    cardbutton.style = newBackgroundImage = 'url('${NewImageURL}')';
     carButton.textContent = "";
 
     // You can use console.log to help you debug!
