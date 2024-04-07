@@ -18,20 +18,9 @@
         <div class="card-content">
             <h2>Push</h2>
             <img src="" alt="TV Show Poster">
+             <div class="button-container"></div> 
         </div>
-     <script>
-            const footer = document.querySelector('.footer');
-            titles.forEach(title => {
-                const button = document.createElement('button');
-                button.id = `random-workout-btn-${title}`;
-                button.textContent = `Random ${title} Workout`;
-                button.dataset.category = title;
-                button.addEventListener('click', () => {
-                    displayRandomWorkout(title);
-                });
-                footer.appendChild(button);
-            });
-        </script>
+        </div>
     </div>
     <div class="footer">
         <button onclick="quoteAlert();">
@@ -52,4 +41,23 @@
          <button onclick="fiveMinuteRest();">
             Start Five Minute Rest
         </button>
+        </div>
+    <script>
+        const cardContainer = document.getElementById('card-container');
+        titles.forEach(title => {
+            const card = document.querySelector('.card').cloneNode(true);
+            card.querySelector('h2').textContent = title;
+            const buttonContainer = card.querySelector('.button-container');
+            const button = document.createElement('button');
+            button.textContent = `Random ${title} Workout`;
+            button.dataset.category = title;
+            button.addEventListener('click', () => {
+                displayRandomWorkout(title);
+            });
+            buttonContainer.appendChild(button);
+            card.style.display = 'block';
+            cardContainer.appendChild(card);
+        });
+    </script>
+    </body>
     </div>
