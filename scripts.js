@@ -70,9 +70,9 @@ function editCardContent(card, newTitle, newImageURL) {
     const cardHeader = card.querySelector("h2");
     cardHeader.textContent = newTitle;
 
-    const cardImage = card.querySelector("img");
-    cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
+    const cardButton = card.querySelector("button");
+    cardbutton.style = newBackgroundImage = 'url('NewImageURL}')';
+    carButton.textContent = "";
 
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
