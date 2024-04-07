@@ -56,8 +56,8 @@ const pushExercises = {
         // Add more shoulder exercises as needed
     ]
 };
-Your final submission should have much more data than this, and 
-you should use more than just an array of strings to store it all.
+// Your final submission should have much more data than this, and 
+// you should use more than just an array of strings to store it all.
 
 
 // This function adds cards the page to display the data in the array
