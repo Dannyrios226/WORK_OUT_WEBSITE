@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,45 +12,60 @@
     <header class="main-header">
         <h1 class="title">GYM WORKOUT ROUTINES</h1>
     </header>
-    <div id="card-container">
-        
-    </div>
-    <div class="card" style="display: none;">
+
+    <div class="card" style="display: block;">
         <div class="card-content">
             <h2>Push</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
-            <button id="random-workout-btn">Random Push Workout</button>
+            <img src="" alt="Push Poster">
+            <button class="random-workout-btn" data-category="push">Get Random Workout</button>
         </div>
     </div>
-    <div class="footer">
+
+    <div class="card" style="display: block;">
+        <div class="card-content">
+            <h2>Pull</h2>
+            <img src="" alt="Pull Poster">
+            <button class="random-workout-btn" data-category="pull">Get Random Workout</button>
+        </div>
+    </div>
+
+    <div class="card" style="display: block;">
+        <div class="card-content">
+            <h2>Legs</h2>
+            <img src="" alt="Legs Poster">
+            <button class="random-workout-btn" data-category="legs">Get Random Workout</button>
+        </div>
+    </div>
+
+    <div class="card" style="display: block;">
+        <div class="card-content">
+            <h2>Cardio</h2>
+            <img src="" alt="Cardio Poster">
+            <button class="random-workout-btn" data-category="cardio">Get Random Workout</button>
+        </div>
+    </div>
+
+   <div class="footer">
         <button onclick="quoteAlert();">
             Get a Random Celeb Workout 
-        </button>
-        <button onclick="randomMixedWorkoutBtn">
-            Random Mixed Workout
         </button>
         <button onclick="removeLastCard();">
             Remove A Card!
         </button>
-         <button onclick="oneMinuteRest();">
+        <button onclick="oneMinuteRest();">
             Start One Minute Rest
         </button>
-         <button onclick="twoMinuteRest();">
+        <button onclick="twoMinuteRest();">
             Start Two Minute Rest
         </button>
         <button onclick="fourMinuteRest();">
             Start Four Minute Rest
         </button>
-         <button onclick="fiveMinuteRest();">
+        <button onclick="fiveMinuteRest();">
             Start Five Minute Rest
         </button>
     </div>
+
 </body>
+
 </html>
-
-
