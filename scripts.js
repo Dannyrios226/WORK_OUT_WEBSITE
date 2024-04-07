@@ -71,8 +71,8 @@ function editCardContent(card, newTitle, newImageURL) {
     cardHeader.textContent = newTitle;
 
     const cardButton = card.querySelector("button");
-    cardButton.sytle.backgroundImage = newBackgroundImage = `url('${newImageURL}')`;
-    carButton.textContent = "";
+    cardButton.style.backgroundImage = newBackgroundImage = `url('${newImageURL}')`;
+    cardButton.textContent = "";
 
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
@@ -113,6 +113,6 @@ function getWorkoutRoutine(title) {
         "CARDIO": "CARDIO WORKOUT"
     };
 
-    return workoutROutine[title];
+    return workoutRoutine[title];
 
     
