@@ -1,14 +1,12 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>GYM WORKOUTS | Home</title>
     <meta name="description" content="A Catalog of GYM WORKOUTS">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
 </head>
-
 <body>
     <header class="main-header">
         <h1 class="title">GYM WORKOUT ROUTINES</h1>
@@ -21,13 +19,25 @@
             <h2>Push</h2>
             <img src="" alt="TV Show Poster">
         </div>
-      <div class="footer">
-        <button onclick="quoteAlert('PUSH');" class="card-button">Push Button</button>
-        <button onclick="quoteAlert('PULL');" class="card-button">Pull Button</button>
-        <button onclick="quoteAlert('LEGS');" class="card-button">Legs Button</button>
-        <button onclick="quoteAlert('CARDIO');" class="card-button">Cardio Button</button>
+        <button id="random-workout-btn">Random Push Workout</button>
+      //  <button id="random-workout-btn">Random Push Workout</button>
     </div>
-</body>
+
+    <div class="footer">
+        <button onclick="quoteAlert();">
+            Get Push Workout
+        </button>
+        <button onclick="randomMixedWorkoutBtn">
+           Get Pull Workout
+        </button>
+        <button onclick="removeLastCard();">
+            Get Legs Worklout
+        </button>
+         <button onclick="oneMinuteRest();">
+            Get Cardio Workout
+        </button>
+    </div>
+
     <div class="footer">
         <button onclick="quoteAlert();">
             Get a Random Celeb Workout 
@@ -51,5 +61,3 @@
             Start Five Minute Rest
         </button>
     </div>
-</body>
-</html>
