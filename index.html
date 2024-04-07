@@ -19,26 +19,24 @@
             <h2>Push</h2>
             <img src="" alt="TV Show Poster">
         </div>
-        <button id="random-workout-btn">Random Push Workout</button>
+     <script>
+            const footer = document.querySelector('.footer');
+            titles.forEach(title => {
+                const button = document.createElement('button');
+                button.id = `random-workout-btn-${title}`;
+                button.textContent = `Random ${title} Workout`;
+                button.dataset.category = title;
+                button.addEventListener('click', () => {
+                    displayRandomWorkout(title);
+                });
+                footer.appendChild(button);
+            });
+        </script>
     </div>
     <div class="footer">
         <button onclick="quoteAlert();">
             Get a Random Celeb Workout 
-        </button>
-        <button class="random-category-btn" data-category+"PUSH">
-            Random Push Workout
-        </button>
-         <button class="random-category-btn" data-category+"PULL">
-            Random Pull Workout
-        </button>
-         <button class="random-category-btn" data-category+"LEGS">
-            Random Legs Workout
-        </button>
-         <button class="random-category-btn" data-category+"CARDIO">
-            Random Cardio Workout
-        </button>
-
-            
+        </button>            
         <button onclick="removeLastCard();">
             Remove A Card!
         </button>
