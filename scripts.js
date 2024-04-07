@@ -39,22 +39,22 @@ const workoutData = [
   {
     title: "PUSH",
     imageURL: FRESH_PRINCE_URL,
-    bulletPoints: ["Push consists of Chest, Triceps, Shoulders", "This is Arnold Schwarzenegger ", "He was Mr. Olypia seven times"],
+    bulletPoints: ["Push consists of Chest, Triceps, Shoulders", "\nThis is Arnold Schwarzenegger ", "\nHe was Mr. Olypia seven times"],
   },
   {
     title: "PULL",
     imageURL: CURB_POSTER_URL,
-    bulletPoints: ["Pull consists of Back, Biceps, Traps", "This is Mike Mentzer", "In 1978, Mentzer won the Mr. Universe in Acapulco with the a perfect 300 score."],
+    bulletPoints: ["Pull consists of Back, Biceps, Traps", "\nThis is Mike Mentzer", "\nIn 1978, Mentzer won the Mr. Universe in Acapulco with the a perfect 300 score."],
   },
   {
     title: "LEGS",
     imageURL: EAST_LOS_HIGH_POSTER_URL, // Customize image URL for Legs
-    bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "This is Jay Cutler", "He is a four time Mr. Olypia champion"],
+    bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "\nThis is Jay Cutler", "\nHe is a four time Mr. Olypia champion"],
   },
   {
     title: "CARDIO",
     imageURL: Cardio_URL,
-    bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "Cardio is greate for heart health", "Cardio is a crutial part of your overal fitness"],
+    bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "\nCardio is greate for heart health", "\nCardio is a crutial part of your overal fitness"],
   },
 ];
 
