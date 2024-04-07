@@ -93,5 +93,26 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
+//write Random Mixed workout Code
 function randomMixedWorkout() {
+    
+}
+
+//Write One minute timer button code 
+function oneMinuteRest(){
+    
+}
+
+//write two minute timer button code
+function fourMinuteRest(){
+    
+}
+
+//write four minute timer button code
+function fourMinuteRest(){
+    
+}
+
+//write five minute timer button code
+function FiverMinuteRest(){
 }
