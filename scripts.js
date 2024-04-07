@@ -24,16 +24,15 @@
  */
 
 
-const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
-const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
+const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
+const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
+const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
+
 // This is an array of strings (TV show titles)
 let titles = [
-    "PUSH",
-    "PULL",
-    "LEGS",
-    "CARDIO" 
+    "Fresh Prince of Bel Air",
+    "Curb Your Enthusiasm",
+    "East Los High"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
@@ -45,17 +44,18 @@ function showCards() {
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
     
-   for (let i = 0; i < titles.length; i++) {
+    for (let i = 0; i < titles.length; i++) {
         let title = titles[i];
 
-       if (title === "PUSH") {
+        // This part of the code doesn't scale very well! After you add your
+        // own data, you'll need to do something totally different here.
+        let imageURL = "";
+        if (i == 0) {
             imageURL = FRESH_PRINCE_URL;
-        } else if (title === "PULL") {
+        } else if (i == 1) {
             imageURL = CURB_POSTER_URL;
-        } else if (title === "LEGS") {
+        } else if (i == 2) {
             imageURL = EAST_LOS_HIGH_POSTER_URL;
-        } else if (title === "CARDIO") {
-            imageURL = Cardio_URL;
         }
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -91,28 +91,4 @@ function quoteAlert() {
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
-}
-
-//write Random Mixed workout Code
-function randomMixedWorkout() {
-    
-}
-
-//Write One minute timer button code 
-function oneMinuteRest(){
-    
-}
-
-//write two minute timer button code
-function fourMinuteRest(){
-    
-}
-
-//write four minute timer button code
-function fourMinuteRest(){
-    
-}
-
-//write five minute timer button code
-function FiverMinuteRest(){
 }
