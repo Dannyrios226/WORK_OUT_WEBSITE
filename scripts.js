@@ -116,8 +116,50 @@ function removeLastCard() {
 
 //write Random Mixed workout Code
 function randomMixedWorkout() {
-    
+let randomWorkout = [];
+
+    randomworkout.push(getRandomExercise(pushExercises.chest));
+    randomworkout.push(getRandomExercise(pushExercises.triceps));
+    randomworkout.push(getRandomExercise(pushExercises.shoulders));
+        
+    displayPUshWorkout(RandomWorkout);
 }
+
+function displayPushWorkout(pushworkout){
+    alert("Random Push Workout :\n" + 
+          pushWorkout.map(exercise => `${exercise.name} (${exercise.difficulty})`).join("\n"));
+}
+
+function getRandomExercise(exerciseCategory) {
+    return exerciseCategory[Math,floor(Math,random() * exerciseCategory.length)];
+
+document.getElementById("random-workout-btn").addEventListener("click", function() {
+   
+    const pushExercises = {
+        chest: [
+            { name: "Push-up", difficulty: "Beginner" },
+            { name: "Bench Press", difficulty: "Intermediate" },
+            { name: "Dumbbell Flyes", difficulty: "Intermediate" },
+         
+        ],
+        triceps: [
+            { name: "Tricep Dips", difficulty: "Intermediate" },
+            { name: "Tricep Extension", difficulty: "Intermediate" },
+            { name: "Skull Crushers", difficulty: "Intermediate" },
+
+        ],
+        shoulders: [
+            { name: "Overhead Press", difficulty: "Intermediate" },
+            { name: "Lateral Raises", difficulty: "Beginner" },
+            { name: "Front Raises", difficulty: "Beginner" },
+
+        ]
+    };
+    
+    randomMixedWorkout(pushExercises);
+});
+
+
 
 //Write One minute timer button code 
 function oneMinuteRest(){
