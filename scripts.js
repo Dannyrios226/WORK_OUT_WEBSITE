@@ -81,7 +81,9 @@ function editCardContent(card, newTitle, newImageURL) {
 }
 
 // This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", function() {
+    showCards();
+});
 
 function quoteAlert() {
     console.log("Button Clicked!")
@@ -112,6 +114,5 @@ function getWorkoutRoutine(title) {
     };
 
     return workoutROutine[title];
-        
-        
+
     
