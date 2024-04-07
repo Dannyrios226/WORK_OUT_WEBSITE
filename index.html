@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
     <title>GYM WORKOUTS | Home</title>
     <meta name="description" content="A Catalog of GYM WORKOUTS">
     <link rel="stylesheet" href="style.css" />
@@ -17,26 +20,29 @@
         </div>
         <button id="random-workout-btn">Random Push Workout</button>
     </div>
+
+    <div class="footer">
+        <button onclick="quoteAlert();">
+            Get Push Workout
+        </button>
+        <button onclick="randomMixedWorkoutBtn">
+           Get Pull Workout
+        </button>
+        <button onclick="removeLastCard();">
+            Get Legs Worklout
+        </button>
+         <button onclick="oneMinuteRest();">
+            Get Cardio Workout
+        </button>
+    </div>
+
     <div class="footer">
         <button onclick="quoteAlert();">
             Get a Random Celeb Workout 
         </button>
         <button onclick="randomMixedWorkoutBtn">
             Random Mixed Workout
-        <button class="random-category-btn" data-category+"PUSH">
-            Random Push Workout
         </button>
-         <button class="random-category-btn" data-category+"PULL">
-            Random Pull Workout
-        </button>
-         <button class="random-category-btn" data-category+"LEGS">
-            Random Legs Workout
-        </button>
-         <button class="random-category-btn" data-category+"CARDIO">
-            Random Cardio Workout
-        </button>
-
-
         <button onclick="removeLastCard();">
             Remove A Card!
         </button>
