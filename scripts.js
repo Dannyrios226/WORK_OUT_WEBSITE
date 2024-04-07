@@ -39,7 +39,7 @@ const workoutData = [
   {
     title: "PUSH",
     imageURL: FRESH_PRINCE_URL,
-    bulletPoints: ["Bullet Point 1", "Bullet Point 2", "Bullet Point 3"],
+    bulletPoints: ["Push consists of Chest, Triceps, Shoulders", "This is arnold schwarzenegger ", "He was Mr Olypia seven times"],
   },
   {
     title: "PULL",
