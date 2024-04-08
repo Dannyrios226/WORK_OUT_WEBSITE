@@ -1,12 +1,8 @@
 /**
- * NOTES/future improvements:
+ * NOTES:
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
  * 2. Make it to where you can cancel the timer 
- * 3. Make the celeberties workout more speficic to their days as well. Example: Chris Hemsworth's pull day or body day etc
-
-
-
-
+ * 3. 
  
  * Data Catalog Project Starter Code - SEA Stage 2
  *
@@ -35,7 +31,6 @@ const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
 const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
-
 // This is an array of strings (TV show titles)
 let titles = [
     "PUSH",
@@ -43,7 +38,6 @@ let titles = [
     "LEGS",
     "CARDIO" 
 ];
-
 const workoutData = [
   {
     title: "PUSH",
@@ -66,7 +60,6 @@ const workoutData = [
     bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "\nCardio is greate for heart health", "\nCardio is a crutial part of your overal fitness"],
   },
 ];
-
 const pushExercises = {
     chest: [
         { name: "Push-up", difficulty: "Beginner" },
@@ -146,45 +139,6 @@ const cardioExercises = {
         
     ]
 };
-
-const celebrityWorkoutData = {
-    "Chris Hemsworth": [
-        { name: "Bench Press", sets: "4", reps: "8-12"},
-        { name: "Incline Dumbbell Press", sets: "3" reps: "10-15"},
-        { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-        { name: "Running", Duration: "30 minutes"},
-     
-    ],
-     "Halle Berry": [
-        { name: "Squats", sets: "3", reps: "15-20"},
-        { name: "Push-Ups", sets: "3", reps: "10-15"},
-        { name: "Lunges", sets: "3", reps: "10 per leg"},
-        { name: "Running", Duration: "30 minutes"},
-     
-    ],
-    "Dwayne 'The Rock' Johnson": [
-        { name: "Barbell Squats", sets: "5", reps: "5-8"},
-        { name: "Leg Press", sets: "3", reps: "10-12"},
-        { name: "Pull ups", sets: "1", reps: "Until Failure"},
-        { name: "Stair Sprints", sets:"5", reps:"30 seconds work, 30 seconds rest"},
-     
-    ],
- "Serena Williams": [
-        { name: "Medicine Ball Slams", sets: "3", reps: "10"},
-        { name: "Box Jumps", sets: "3", reps: "5"},
-        { name: "Explosive Push-Ups", sets: "3", reps: "Until Failure"},
-        { name: "Sprints", sets: "6", reps: "100 meters"},
-     
-    ]
-};
-
-
-
-
-
-
-
-
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 // This function adds cards the page to display the data in the array
@@ -192,18 +146,14 @@ function showCards() {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
-
   for (let i = 0; i < workoutData.length; i++) {
     const workout = workoutData[i]; // Access each workout object
     const nextCard = templateCard.cloneNode(true);
-
     editCardContent(nextCard, workout.title, workout.imageURL);
     addBulletPoints(nextCard, workout.bulletPoints); // Pass bulletPoints array
-
     cardContainer.appendChild(nextCard);
   }
 }
-
 function addBulletPoints(card, bulletPoints) {
   const ul = card.querySelector("ul");
   ul.innerHTML = "";
@@ -214,7 +164,6 @@ function addBulletPoints(card, bulletPoints) {
   });
 }
  document.addEventListener("DOMContentLoaded", showCards);      
-
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
     const cardHeader = card.querySelector("h2");
@@ -229,7 +178,6 @@ function editCardContent(card, newTitle, newImageURL) {
 }
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
-
 function quoteAlert() {
     console.log("Button Clicked!")
     alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
@@ -238,52 +186,41 @@ function removeLastCard() {
     titles.pop(); // Remove last item in titles array
     showCards(); // Call showCards again to refresh
 }
-
-
 //randomize Push workouts
 function getRandomPushExercises() {
   const randomExercises = [];
   const categories = ["chest", "triceps", "shoulders"];
-
  
   for (let i = 0; i < categories.length; i++) {
     const category = categories[i];
     const exercises = pushExercises[category];
-
    
     const randomIndex = Math.floor(Math.random() * exercises.length);
-
    
     randomExercises.push(exercises[randomIndex]);
-
   
     if (randomExercises.length >= 4) {
       break;
     }
   }
-
   
   return randomExercises.slice(0, 4);
 }
-
 // Display Push workouts with alert
 function displayPushWorkout() {
   const randomExercises = getRandomPushExercises();
-
   // Build a string to display all exercises in the alert
   let workoutMessage = "Your Push Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
     workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
   }
-
   alert(workoutMessage);
 }
 //randomize Pull workouts
 function getRandomPullExercises() {
   const randomExercises = [];
   const categories = ["back", "biceps", "traps"];
-
   for (let i = 0; i < categories.length; i++) {
     const category = categories[i];
     const exercises = pullExercises[category];
@@ -293,28 +230,22 @@ function getRandomPullExercises() {
       break;
     }
   }
-
   return randomExercises.slice(0, 4);
 }
-
 // Display Pull workouts with alert
 function displayPullWorkout() {
   const randomExercises = getRandomPullExercises();
-
   let workoutMessage = "Your Pull Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
     workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
   }
-
   alert(workoutMessage);
 }
-
 //randomize leg workouts
 function getRandomLegExercises() {
   const randomExercises = [];
   const categories = ["quads", "hamstrings", "glutes"];
-
   for (let i = 0; i < categories.length; i++) {
     const category = categories[i];
     const exercises = legExercises[category];
@@ -324,45 +255,33 @@ function getRandomLegExercises() {
       break;
     }
   }
-
   return randomExercises.slice(0, 4);
 }
-
 // Display Leg workouts with alert
 function displayLegWorkout() {
   const randomExercises = getRandomLegExercises();
-
   let workoutMessage = "Your Leg Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
     workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
   }
-
   alert(workoutMessage);
 }
-
 //randomize Cardio workouts
 function getRandomCardioExercises() {
   const randomExercises = [];
   const durations = ["15-minute", "30-minute", "45-minute"];
-
-
   const randomDuration = durations[Math.floor(Math.random() * durations.length)];
   const exercises = cardioExercises[randomDuration];
-
-
   for (let i = 0; i < 2; i++) {
     const randomIndex = Math.floor(Math.random() * exercises.length);
     randomExercises.push(exercises[randomIndex]);
   }
-
   return randomExercises;
 }
-
 // Display Cardio workouts with alert
 function displayCardioWorkout() {
   const randomExercises = getRandomCardioExercises();
-
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
@@ -371,6 +290,7 @@ function displayCardioWorkout() {
 
   alert(workoutMessage);
 }
+
 
 
 function getCategoryExercises(category) {
@@ -400,14 +320,14 @@ function getRandomMixedWorkout() {
     randomExercises.push(exercises[randomIndex]);
   }
 
-  
+
   while (randomExercises.length < 4) {
     const randomIndex = Math.floor(Math.random() * workoutCategories.length);
     const category = workoutCategories[randomIndex];
     const exercises = getCategoryExercises(category);
     const additionalIndex = Math.floor(Math.random() * exercises.length);
 
- 
+
     if (!randomExercises.some(ex => ex.name === exercises[additionalIndex].name)) {
       randomExercises.push(exercises[additionalIndex]);
     }
@@ -427,24 +347,6 @@ function displayRandomMixedWorkout() {
 
   alert(workoutMessage);
 }
-
-function getRandomCelebrity() {
- const celebrirtyNames = Object.keys(celebrityWorkoutData);
- const randomIndex = Math.floor(Math.random() * celebrityNames.length);
- retrun celebrityNames[randomIndex];
-}
-
-function displayRandomCelebrityWorkout() {
- const celebrity = getRandomCelebrity();
- const celebrityWorkout = celebrityWorkoutData[celebirty];
-
- let workoutMessage = `**${celebrity}'s Workout: **\n\n`;
- for (const exercise of celebrityWorkout) { 
-  workoutMessage += `- ${exercise.name} (Sets: ${exercise.sets}, Reps: ${exercise.reps})\n`;
-}
-alert(workoutMessage);
-}
-  
 
 
 
