@@ -201,17 +201,29 @@ function getRandomExercises(categoryExercises) {
     return randomExercises;
 }
 
+document.querySelectorAll(".random-workout-btn").forEach(button => {
+    const category = button.getAttribute("data-category");
+    button.addEventListener("click", () => {
+        displayRandomWorkout(category);
+    });
+});
 
-document.getElementById("push-workout-button").addEventListener("click", function () {
-  const pushExercises = getRandomExercises(pushExercises); // Get random exercises
+function pushWorkout() {
+  const pushExercises = getRandomExercises(pushExercises); 
   let workoutMessage = "**Push Workout:**\n";
 
   pushExercises.forEach(exercise => {
     workoutMessage += `* ${exercise.name} (${exercise.difficulty})\n`;
   });
 
-  alert(workoutMessage);
-});
+  console.log(workoutMessage); 
+  alert(workoutMessage); 
+}
+document.getElementById("push-workout-button").addEventListener("click", pushWorkout);
+
+
+
+
 
 
 //Write One minute timer button code 
