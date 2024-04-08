@@ -1,4 +1,6 @@
 /**
+ * NOTES:
+ * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
  * Data Catalog Project Starter Code - SEA Stage 2
  *
  * This file is where you should be doing most of your work. You should
@@ -258,9 +260,34 @@ function displayPullWorkout() {
   alert(workoutMessage);
 }
 
+function getRandomLegExercises() {
+  const randomExercises = [];
+  const categories = ["quads", "hamstrings", "glutes"];
 
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i];
+    const exercises = legExercises[category];
+    const randomIndex = Math.floor(Math.random() * exercises.length);
+    randomExercises.push(exercises[randomIndex]);
+    if (randomExercises.length >= 4) {
+      break;
+    }
+  }
 
+  return randomExercises.slice(0, 4);
+}
 
+function displayLegWorkout() {
+  const randomExercises = getRandomLegExercises();
+
+  let workoutMessage = "Your Leg Workout:\n\n";
+  for (let i = 0; i < randomExercises.length; i++) {
+    const exercise = randomExercises[i];
+    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
+  }
+
+  alert(workoutMessage);
+}
 
 
 
