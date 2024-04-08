@@ -192,26 +192,23 @@ function removeLastCard() {
 }
 
 function getRandomExercises(categoryExercises) {
-    let randomExercises = [];
-    for (let subcategory in categoryExercises) {
-        const exercises = categoryExercises[subcategory];
-        const randomIndex = Math.floor(Math.random() * exercises.length);
-        randomExercises.push(exercises[randomIndex]);
-    }
-    return randomExercises;
+  const randomExercises = [];
+
+  for (const subcategory in categoryExercises) {
+    const exercises = categoryExercises[subcategory]; 
+  
+    const randomIndex = Math.floor(Math.random() * exercises.length);
+   
+    randomExercises.push(exercises[randomIndex]);
+  }
+  
+  return randomExercises.slice(0, 4); 
 }
 
-document.querySelectorAll(".random-workout-btn").forEach(button => {
-    const category = button.getAttribute("data-category");
-    button.addEventListener("click", () => {
-        displayRandomWorkout(category);
-    });
-});
-
+// Function to display a random Push Workout (similar to quoteAlert)
 function pushWorkout() {
   const pushExercises = getRandomExercises(pushExercises); 
   let workoutMessage = "**Push Workout:**\n";
-
   pushExercises.forEach(exercise => {
     workoutMessage += `* ${exercise.name} (${exercise.difficulty})\n`;
   });
@@ -219,7 +216,7 @@ function pushWorkout() {
   console.log(workoutMessage); 
   alert(workoutMessage); 
 }
-
+pushWorkout();
 
 
 
