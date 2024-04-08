@@ -1,7 +1,7 @@
 /**
  * NOTES/future improvements:
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
- * 2. Implement a rest timer
+ * 2. try to Implement a rest timer again 
  * 3. Make it to where the celeb workouts are more detailed for example The rocks monday workout or tuesday workout or full body workrout etc etc 
  * 4. create a save workout feature so that you can interact with the website and save workout that was given. For example clicking push gives a push workout but then when removing alert it doesnt save the workout and clickignpush workout again gives you a new one. 
  
