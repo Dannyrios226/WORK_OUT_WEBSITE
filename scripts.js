@@ -430,7 +430,7 @@ function searchExercises(searchTerm) {
 
   alert(exerciseMessage);
 }
-
+    
 function buildExerciseMessage(exerciseData) {
   let message = "";
   for (const category in exerciseData) {
