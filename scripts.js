@@ -209,6 +209,13 @@ document.querySelectorAll(".random-workout-btn").forEach(button => {
     });
 });
 
+
+
+
+
+
+
+
 //Write One minute timer button code 
 function oneMinuteRest(){
 // //Write One minute timer button code 
