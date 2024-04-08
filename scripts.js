@@ -332,12 +332,62 @@ function displayCardioWorkout() {
 
   alert(workoutMessage);
 }
+
+
+function getCategoryExercises(category) {
+  switch (category) {
+    case "push":
+      return getRandomPushExercises();
+    case "pull":
+      return getRandomPullExercises();
+    case "legs":
+      return getRandomLegExercises();
+    case "cardio":
+      return getRandomCardioExercises();
+    default:
+      console.error(`Invalid category: ${category}`);
+      return []; 
+  }
+}
+
+function getRandomMixedWorkout() {
+  const workoutCategories = ["push", "pull", "legs", "cardio"];
+  const randomExercises = [];
+
+  // Ensure at least one exercise from each category is included
+  for (const category of workoutCategories) {
+    const exercises = getCategoryExercises(category); 
+    const randomIndex = Math.floor(Math.random() * exercises.length);
+    randomExercises.push(exercises[randomIndex]);
+  }
+
+  
+  while (randomExercises.length < 4) {
+    const randomIndex = Math.floor(Math.random() * workoutCategories.length);
+    const category = workoutCategories[randomIndex];
+    const exercises = getCategoryExercises(category);
+    const additionalIndex = Math.floor(Math.random() * exercises.length);
+
  
+    if (!randomExercises.some(ex => ex.name === exercises[additionalIndex].name)) {
+      randomExercises.push(exercises[additionalIndex]);
+    }
+  }
 
+  return randomExercises;
+}
 
+function displayRandomMixedWorkout() {
+  const randomExercises = getRandomMixedWorkout();
 
+  let workoutMessage = "Your Random Mixed Workout:\n\n";
+  for (let i = 0; i < randomExercises.length; i++) {
+    const exercise = randomExercises[i];
+    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
+  }
 
-
+  alert(workoutMessage);
+}
 
 
 
