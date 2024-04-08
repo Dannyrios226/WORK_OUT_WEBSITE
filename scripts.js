@@ -413,15 +413,19 @@ function searchExercises(searchTerm) {
 
   switch (searchTerm) {
     case "push":
+    case "PUSH":
       exerciseMessage = buildExerciseMessage(pushExercises);
       break;
     case "pull":
+    case "PULL":
       exerciseMessage = buildExerciseMessage(pullExercises);
       break;
     case "legs":
+    case "LEGS":
       exerciseMessage = buildExerciseMessage(legExercises);
       break;
     case "cardio":
+    case "CARDIO":
       exerciseMessage = buildExerciseMessage(cardioExercises);
       break;
     default:
