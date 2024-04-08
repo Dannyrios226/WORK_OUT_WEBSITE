@@ -1,6 +1,13 @@
 /**
  * NOTES:
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
+ * 2. Make it to where you can cancel the timer 
+ * 3. 
+
+
+
+
+ 
  * Data Catalog Project Starter Code - SEA Stage 2
  *
  * This file is where you should be doing most of your work. You should
@@ -326,33 +333,45 @@ function displayCardioWorkout() {
   alert(workoutMessage);
 }
 
-//Write One minute timer button code 
-function oneMinuteRest(){
-// //Write One minute timer button code 
-// function oneMinuteRest(){
+// Gets the durration of the rest timer 
+function getRestDuration() {
+  let userInput = prompt("Enter desired rest duration in minutes (e.g., 1, 2, 3, 4, or 5): ");
 
+  // Checks user input 
+  while (isNaN(userInput) || parseInt(userInput) <= 0 || parseInt(userInput) > 5) {
+    userInput = prompt("Invalid input. Please enter a number between 1 and 5: ");
+  }
+
+  return parseInt(userInput);
 }
-// }
 
-//write two minute timer button code
-function fourMinuteRest(){
-// //write two minute timer button code
-// function fourMinuteRest(){
 
+//starts timer 
+function startRestTimer(durationInMinutes) {
+  let timeLeft = durationInMinutes * 60; // Convert min to sec
+
+  const timerContainer = document.createElement("div"); 
+  timerContainer.classList.add("rest-timer-alert"); 
+
+  const timerDisplay = document.createElement("p");
+  timerDisplay.textContent = `${durationInMinutes}:${"00".padStart(2, "0")}`; 
+    
+  timerContainer.appendChild(timerDisplay);
+  document.body.appendChild(timerContainer); 
+
+  const timerInterval = setInterval(() => {
+    timeLeft--;
+
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+
+    timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+
+    if (timeLeft === 0) {
+      clearInterval(timerInterval);
+      timerContainer.remove(); 
+
+      alert("Rest Over!"); 
+    }
+  }, 1000);
 }
-// }
-
-//write four minute timer button code
-function fourMinuteRest(){
-// //write four minute timer button code
-// function fourMinuteRest(){
-
-}
-// }
-
-//write five minute timer button code
-function FiverMinuteRest(){
-}
-// //write five minute timer button code
-// function FiverMinuteRest(){
-// }
