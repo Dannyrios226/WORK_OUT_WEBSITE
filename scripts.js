@@ -191,9 +191,43 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
+function getRandomPushExercises() {
+  const randomExercises = [];
+  const categories = ["chest", "triceps", "shoulders"];
 
+ 
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i];
+    const exercises = pushExercises[category];
 
+   
+    const randomIndex = Math.floor(Math.random() * exercises.length);
 
+   
+    randomExercises.push(exercises[randomIndex]);
+
+  
+    if (randomExercises.length >= 4) {
+      break;
+    }
+  }
+
+  
+  return randomExercises.slice(0, 4);
+}
+
+function displayPushWorkout() {
+  const randomExercises = getRandomPushExercises();
+
+  // Build a string to display all exercises in the alert
+  let workoutMessage = "Your Push Workout:\n\n";
+  for (let i = 0; i < randomExercises.length; i++) {
+    const exercise = randomExercises[i];
+    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
+  }
+
+  alert(workoutMessage);
+}
 
 
 
