@@ -78,7 +78,7 @@ body{
     font size: 25px;
 }
 #js_timer {
-    text-align: center;
+    text-align: right;
 }
 #timer{
     background: #fff;
