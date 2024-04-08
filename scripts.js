@@ -229,6 +229,40 @@ function displayPushWorkout() {
   alert(workoutMessage);
 }
 
+function getRandomPullExercises() {
+  const randomExercises = [];
+  const categories = ["back", "biceps", "traps"];
+
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i];
+    const exercises = pullExercises[category];
+    const randomIndex = Math.floor(Math.random() * exercises.length);
+    randomExercises.push(exercises[randomIndex]);
+    if (randomExercises.length >= 4) {
+      break;
+    }
+  }
+
+  return randomExercises.slice(0, 4);
+}
+
+function displayPullWorkout() {
+  const randomExercises = getRandomPullExercises();
+
+  let workoutMessage = "Your Pull Workout:\n\n";
+  for (let i = 0; i < randomExercises.length; i++) {
+    const exercise = randomExercises[i];
+    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
+  }
+
+  alert(workoutMessage);
+}
+
+
+
+
+
+
 
 
 
