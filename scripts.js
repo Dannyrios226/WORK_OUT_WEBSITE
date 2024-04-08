@@ -412,20 +412,20 @@ function searchExercises(searchTerm) {
   let exerciseMessage = "";
 
   switch (searchTerm) {
-    case "PUSH":
+    case "push":
       exerciseMessage = buildExerciseMessage(pushExercises);
       break;
-    case "PULL":
+    case "pull":
       exerciseMessage = buildExerciseMessage(pullExercises);
       break;
-    case "LEGS":
+    case "legs":
       exerciseMessage = buildExerciseMessage(legExercises);
       break;
-    case "CARDIO":
+    case "cardio":
       exerciseMessage = buildExerciseMessage(cardioExercises);
       break;
     default:
-      exerciseMessage = "Invalid search term. Please enter 'PUSH', 'PULL', 'LEGS', or 'CARDIO'.";
+      exerciseMessage = "Invalid search term. Please enter 'push', 'pull', 'legs', or 'cardio'.";
   }
 
   alert(exerciseMessage);
