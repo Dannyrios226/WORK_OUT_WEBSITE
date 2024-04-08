@@ -447,30 +447,3 @@ function buildExerciseMessage(exerciseData) {
   return message;
 }
 
-function startRestTimer() {
-      const restDUration = 60; 
-
-      let seconds Reaming = restDuration;
-      // updates timer display every second
-      const timerInterval = setInterval(() => {
-       secondsRemaning --;
-
-      const formattedTime = formatTime(secondsRemaining); 
-
-       document.getElementbyId("timer-display").textContent = formattedTime;
-
-       if(secondsRemaining === 0) {
-        clear Interval(timerInterval);
-        alert("Rest Time Over! Get Back to Your Workout!");
-       }
-      }, 1000); //update every 1000 milliseconds
-}
-
-function formatTime(seconds) {
- const minutes = Math.floor( seconds / 60);
- const remainingSeconds = seconds % 60;
- return `${minutes.toString().padStart(2, "0"0}: ${reamainingSeconds.toString().padStart(2,"0")}`;
-}
-       
-
-      
