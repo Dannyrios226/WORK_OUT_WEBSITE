@@ -191,35 +191,7 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
-function getRandomExercises(categoryExercises) {
-  const randomExercises = [];
 
-  for (const subcategory in categoryExercises) {
-    const exercises = categoryExercises[subcategory]; 
-  
-    const randomIndex = Math.floor(Math.random() * exercises.length);
-   
-    randomExercises.push(exercises[randomIndex]);
-  }
-  
-  return randomExercises.slice(0, 4); 
-}
-
-// Function to display a random Push Workout (similar to quoteAlert)
-function pushWorkout() {
-    console.log("Push Workout button clicked!")
-  const pushExercises = getRandomExercises(pushExercises);
-  let workoutMessage = "**Push Workout:**\n";
-  pushExercises.forEach(exercise => {
-    workoutMessage += `* ${exercise.name} (${exercise.difficulty})\n`;
-  });
-
-  console.log(workoutMessage);
-  alert(workoutMessage);
-}
-
-const pushWorkoutButton = document.getElementById("push-workout-button");
-pushWorkoutButton.addEventListener("click", pushWorkout);
 
 
 
