@@ -71,3 +71,19 @@ button {
 li {
   margin-bottom: 5px; /* Adjust spacing as needed */
 }
+
+body{
+    background: #f8db638;
+    front-size: 25
+    font size: 25px;
+}
+#js_timer {
+    text-align: center;
+}
+#timer{
+    background: #fff;
+    color: #000;
+    width: 100px;
+    margin: 50px auto;
+}
+
