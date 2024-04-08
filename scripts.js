@@ -1,8 +1,8 @@
 /**
- * NOTES:
+ * NOTES/future improvements:
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
  * 2. Make it to where you can cancel the timer 
- * 3. 
+ * 3. Make the celeberties workout more speficic to their days as well. Example: Chris Hemsworth's pull day or body day etc
 
 
 
@@ -146,6 +146,45 @@ const cardioExercises = {
         
     ]
 };
+
+const celebrityWorkoutData = {
+    "Chris Hemsworth": [
+        { name: "Bench Press", sets: "4", reps: "8-12"},
+        { name: "Incline Dumbbell Press", sets: "3" reps: "10-15"},
+        { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+        { name: "Running", Duration: "30 minutes"},
+     
+    ],
+     "Halle Berry": [
+        { name: "Squats", sets: "3", reps: "15-20"},
+        { name: "Push-Ups", sets: "3", reps: "10-15"},
+        { name: "Lunges", sets: "3", reps: "10 per leg"},
+        { name: "Running", Duration: "30 minutes"},
+     
+    ],
+    "Dwayne 'The Rock' Johnson": [
+        { name: "Barbell Squats", sets: "5", reps: "5-8"},
+        { name: "Leg Press", sets: "3", reps: "10-12"},
+        { name: "Pull ups", sets: "1", reps: "Until Failure"},
+        { name: "Stair Sprints", sets:"5", reps:"30 seconds work, 30 seconds rest"},
+     
+    ],
+ "Serena Williams": [
+        { name: "Medicine Ball Slams", sets: "3", reps: "10"},
+        { name: "Box Jumps", sets: "3", reps: "5"},
+        { name: "Explosive Push-Ups", sets: "3", reps: "Until Failure"},
+        { name: "Sprints", sets: "6", reps: "100 meters"},
+     
+    ]
+};
+
+
+
+
+
+
+
+
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 // This function adds cards the page to display the data in the array
@@ -389,7 +428,23 @@ function displayRandomMixedWorkout() {
   alert(workoutMessage);
 }
 
+function getRandomCelebrity() {
+ const celebrirtyNames = Object.keys(celebrityWorkoutData);
+ const randomIndex = Math.floor(Math.random() * celebrityNames.length);
+ retrun celebrityNames[randomIndex];
+}
 
+function displayRandomCelebrityWorkout() {
+ const celebrity = getRandomCelebrity();
+ const celebrityWorkout = celebrityWorkoutData[celebirty];
+
+ let workoutMessage = `**${celebrity}'s Workout: **\n\n`;
+ for (const exercise of celebrityWorkout) { 
+  workoutMessage += `- ${exercise.name} (Sets: ${exercise.sets}, Reps: ${exercise.reps})\n`;
+}
+alert(workoutMessage);
+}
+  
 
 
 
