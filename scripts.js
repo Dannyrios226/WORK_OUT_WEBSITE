@@ -207,6 +207,7 @@ function getRandomExercises(categoryExercises) {
 
 // Function to display a random Push Workout (similar to quoteAlert)
 function pushWorkout() {
+    console.log("Push Workout button clicked!")
   const pushExercises = getRandomExercises(pushExercises);
   let workoutMessage = "**Push Workout:**\n";
   pushExercises.forEach(exercise => {
