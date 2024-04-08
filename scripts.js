@@ -223,12 +223,15 @@ function getPushWorkout() {
     workoutMessage += `- ${exercise.name} (${exercise.difficulty})\n`;
   });
 
-  alert(workoutMessage); 
+  alert(workoutMessage);
 }
+const pushWorkoutButton = document.getElementById("push-workout-button");
+pushWorkoutButton.addEventListener("click", getPushWorkout);
 
-document.getElementById("push-workout-button").addEventListener("click", getPushWorkout); 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  // ... (existing code within DOMContentLoaded)
+});
 
 
 //Write One minute timer button code 
