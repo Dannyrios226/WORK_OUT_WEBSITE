@@ -215,23 +215,7 @@ function getRandomExercises(category) {
     return []; 
   }
 
-function getPushWorkout() {
-  const randomPushExercises = getRandomExercises("pushExercises");
-  let workoutMessage = "**Push Workout:**\n";
 
-  randomPushExercises.forEach(exercise => {
-    workoutMessage += `- ${exercise.name} (${exercise.difficulty})\n`;
-  });
-
-  alert(workoutMessage);
-}
-const pushWorkoutButton = document.getElementById("push-workout-button");
-pushWorkoutButton.addEventListener("click", getPushWorkout);
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  // ... (existing code within DOMContentLoaded)
-});
 
 
 //Write One minute timer button code 
