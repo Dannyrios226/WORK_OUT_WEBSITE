@@ -202,12 +202,17 @@ function getRandomExercises(categoryExercises) {
 }
 
 
-document.querySelectorAll(".random-workout-btn").forEach(button => {
-    const category = button.getAttribute("data-category");
-    button.addEventListener("click", () => {
-        displayRandomWorkout(category);
-    });
+document.getElementById("push-workout-button").addEventListener("click", function () {
+  const pushExercises = getRandomExercises(pushExercises); // Get random exercises
+  let workoutMessage = "**Push Workout:**\n";
+
+  pushExercises.forEach(exercise => {
+    workoutMessage += `* ${exercise.name} (${exercise.difficulty})\n`;
+  });
+
+  alert(workoutMessage);
 });
+
 
 //Write One minute timer button code 
 function oneMinuteRest(){
