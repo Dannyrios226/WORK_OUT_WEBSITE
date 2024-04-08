@@ -191,29 +191,6 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
-function getRandomExercises(categoryExercises) {
-    let randomExercises = [];
-    for (let subcategory in categoryExercises) {
-        const exercises = categoryExercises[subcategory];
-        const randomIndex = Math.floor(Math.random() * exercises.length);
-        randomExercises.push(exercises[randomIndex]);
-    }
-    return randomExercises;
-}
-
-
-document.querySelectorAll(".random-workout-btn").forEach(button => {
-    const category = button.getAttribute("data-category");
-    button.addEventListener("click", () => {
-        displayRandomWorkout(category);
-    });
-});
-
-function getRandomExercises(category) {
-  // Check if category exists in the exercise data
-  if (!Object.hasOwnProperty.call(window, category)) {
-    return []; 
-  }
 
 
 
