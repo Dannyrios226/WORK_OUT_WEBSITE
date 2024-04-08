@@ -344,7 +344,9 @@ var ele = document.getElementById('Timer");
 }, 1000)
 })()
 
-
+fuction pause(){
+ clearInteval(timer);
+}
 
 
 
