@@ -219,7 +219,7 @@ function pushWorkout() {
   console.log(workoutMessage); 
   alert(workoutMessage); 
 }
-document.getElementById("push-workout-button").addEventListener("click", pushWorkout);
+
 
 
 
