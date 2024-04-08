@@ -143,16 +143,16 @@ const cardioExercises = {
 const celebrityWorkoutData = {
   "Chris Hemsworth": [
     { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3" reps: "10-15"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
     { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", Duration: "30 minutes"},
+    { name: "Running", set:"1", reps: "30 minutes"},
    
   ],
    "Halle Berry": [
     { name: "Squats", sets: "3", reps: "15-20"},
     { name: "Push-Ups", sets: "3", reps: "10-15"},
     { name: "Lunges", sets: "3", reps: "10 per leg"},
-    { name: "Running", Duration: "30 minutes"},
+    { name: "Running", sets:"1", reps: "30 minutes"},
    
   ],
   "Dwayne 'The Rock' Johnson": [
@@ -388,6 +388,23 @@ function displayRandomMixedWorkout() {
   alert(workoutMessage);
 }
 
+function getRandomCelebrity() {
+  const celebrityNames = Object.keys(celebrityWorkoutData);
+  const randomIndex = Math.floor(Math.random() * celebrityNames.length);
+  return celebrityNames[randomIndex];
+}
+
+unction displayRandomCelebrityWorkout() {
+  const celebrity = getRandomCelebrity();
+  const celebrityWorkout = celebrityWorkoutData[celebrity];
+
+  let workoutMessage = `**${celebrity}'s Workout:**\n\n`;
+  for (const exercise of celebrityWorkout) {
+    workoutMessage += `- ${exercise.name} (Sets: ${exercise.sets}, Reps: ${exercise.reps})\n`;
+  }
+
+  alert(workoutMessage);
+}
 
 
 
