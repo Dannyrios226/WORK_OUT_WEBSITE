@@ -333,20 +333,6 @@ function displayCardioWorkout() {
   alert(workoutMessage);
 }
  
-var timer; 
-var ele = document.getElementById('Timer");
-
-(function (){
- var sec = 0;
- timer = setInterval (())=>{
-  else.innerHTML = '00: '+sec;
- sec++;
-}, 1000)
-})()
-
-fuction pause(){
- clearInteval(timer);
-}
 
 
 
