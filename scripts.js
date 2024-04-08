@@ -397,7 +397,7 @@ function getRandomCelebrity() {
 function displayRandomCelebrityWorkout() {
   const celebrity = getRandomCelebrity();
   const celebrityWorkout = celebrityWorkoutData[celebrity];
-
+  
   let workoutMessage = `**${celebrity}'s Workout:**\n\n`;
 
   for (const exercise of celebrityWorkout) {
@@ -407,5 +407,38 @@ function displayRandomCelebrityWorkout() {
   alert(workoutMessage);
 }
 
+function searchExercises(searchTerm) {
+  searchTerm = searchTerm.toLowerCase(); // Ensure case-insensitive search
+  let exerciseMessage = "";
 
+  switch (searchTerm) {
+    case "PUSH":
+      exerciseMessage = buildExerciseMessage(pushExercises);
+      break;
+    case "PULL":
+      exerciseMessage = buildExerciseMessage(pullExercises);
+      break;
+    case "LEGS":
+      exerciseMessage = buildExerciseMessage(legExercises);
+      break;
+    case "CARDIO":
+      exerciseMessage = buildExerciseMessage(cardioExercises);
+      break;
+    default:
+      exerciseMessage = "Invalid search term. Please enter 'PUSH', 'PULL', 'LEGS', or 'CARDIO'.";
+  }
+
+  alert(exerciseMessage);
+}
+
+function buildExerciseMessage(exerciseData) {
+  let message = "";
+  for (const category in exerciseData) {
+    message += `\n**${category.toUpperCase()} Exercises:**\n`;
+    for (const exercise of exerciseData[category]) {
+      message += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
+    }
+  }
+  return message;
+}
                                   
