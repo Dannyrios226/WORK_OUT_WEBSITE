@@ -139,6 +139,46 @@ const cardioExercises = {
         
     ]
 };
+
+const celebrityWorkoutData = {
+  "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3" reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", Duration: "30 minutes"},
+   
+  ],
+   "Halle Berry": [
+    { name: "Squats", sets: "3", reps: "15-20"},
+    { name: "Push-Ups", sets: "3", reps: "10-15"},
+    { name: "Lunges", sets: "3", reps: "10 per leg"},
+    { name: "Running", Duration: "30 minutes"},
+   
+  ],
+  "Dwayne 'The Rock' Johnson": [
+    { name: "Barbell Squats", sets: "5", reps: "5-8"},
+    { name: "Leg Press", sets: "3", reps: "10-12"},
+    { name: "Pull ups", sets: "1", reps: "Until Failure"},
+    { name: "Stair Sprints", sets:"5", reps:"30 seconds work, 30 seconds rest"},
+   
+  ],
+ "Serena Williams": [
+    { name: "Medicine Ball Slams", sets: "3", reps: "10"},
+    { name: "Box Jumps", sets: "3", reps: "5"},
+    { name: "Explosive Push-Ups", sets: "3", reps: "Until Failure"},
+    { name: "Sprints", sets: "6", reps: "100 meters"},
+   
+  ]
+};
+
+
+
+
+
+
+
+
+
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 // This function adds cards the page to display the data in the array
