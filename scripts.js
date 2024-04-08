@@ -1,8 +1,8 @@
 /**
- * NOTES:
+ * NOTES/future improvements:
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
- * 2. Make it to where you can cancel the timer 
- * 3. 
+ * 2. Implement a rest timer
+ * 3. Make it to where the celeb workouts are more detailed for example The rocks monday workout or tuesday workout or full body workrout etc etc 
  
  * Data Catalog Project Starter Code - SEA Stage 2
  *
