@@ -193,6 +193,8 @@ function removeLastCard() {
     showCards(); // Call showCards again to refresh
 }
 
+
+//randomize Push workouts
 function getRandomPushExercises() {
   const randomExercises = [];
   const categories = ["chest", "triceps", "shoulders"];
@@ -218,6 +220,7 @@ function getRandomPushExercises() {
   return randomExercises.slice(0, 4);
 }
 
+// Display Push workouts with alert
 function displayPushWorkout() {
   const randomExercises = getRandomPushExercises();
 
@@ -230,7 +233,7 @@ function displayPushWorkout() {
 
   alert(workoutMessage);
 }
-
+//randomize Pull workouts
 function getRandomPullExercises() {
   const randomExercises = [];
   const categories = ["back", "biceps", "traps"];
@@ -248,6 +251,7 @@ function getRandomPullExercises() {
   return randomExercises.slice(0, 4);
 }
 
+// Display Pull workouts with alert
 function displayPullWorkout() {
   const randomExercises = getRandomPullExercises();
 
@@ -260,6 +264,7 @@ function displayPullWorkout() {
   alert(workoutMessage);
 }
 
+//randomize leg workouts
 function getRandomLegExercises() {
   const randomExercises = [];
   const categories = ["quads", "hamstrings", "glutes"];
@@ -277,6 +282,7 @@ function getRandomLegExercises() {
   return randomExercises.slice(0, 4);
 }
 
+// Display Leg workouts with alert
 function displayLegWorkout() {
   const randomExercises = getRandomLegExercises();
 
@@ -289,9 +295,36 @@ function displayLegWorkout() {
   alert(workoutMessage);
 }
 
+//randomize Cardio workouts
+function getRandomCardioExercises() {
+  const randomExercises = [];
+  const durations = ["15-minute", "30-minute", "45-minute"];
 
 
+  const randomDuration = durations[Math.floor(Math.random() * durations.length)];
+  const exercises = cardioExercises[randomDuration];
 
+
+  for (let i = 0; i < 2; i++) {
+    const randomIndex = Math.floor(Math.random() * exercises.length);
+    randomExercises.push(exercises[randomIndex]);
+  }
+
+  return randomExercises;
+}
+
+// Display Cardio workouts with alert
+function displayCardioWorkout() {
+  const randomExercises = getRandomCardioExercises();
+
+  let workoutMessage = "Your Cardio Workout:\n\n";
+  for (let i = 0; i < randomExercises.length; i++) {
+    const exercise = randomExercises[i];
+    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; // Assuming first exercise defines duration
+  }
+
+  alert(workoutMessage);
+}
 
 //Write One minute timer button code 
 function oneMinuteRest(){
