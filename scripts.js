@@ -213,8 +213,8 @@ function pushWorkout() {
     workoutMessage += `* ${exercise.name} (${exercise.difficulty})\n`;
   });
 
-  console.log("workoutMessage"); 
-  alert("workoutMessage"); 
+  console.log(workoutMessage); 
+  alert(workoutMessage); 
 }
 pushWorkout();
 
