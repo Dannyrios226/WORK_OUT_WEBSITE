@@ -394,19 +394,18 @@ function getRandomCelebrity() {
   return celebrityNames[randomIndex];
 }
 
-unction displayRandomCelebrityWorkout() {
+function displayRandomCelebrityWorkout() {
   const celebrity = getRandomCelebrity();
   const celebrityWorkout = celebrityWorkoutData[celebrity];
 
   let workoutMessage = `**${celebrity}'s Workout:**\n\n`;
+
   for (const exercise of celebrityWorkout) {
     workoutMessage += `- ${exercise.name} (Sets: ${exercise.sets}, Reps: ${exercise.reps})\n`;
   }
 
   alert(workoutMessage);
 }
-
-
 
 
                                   
