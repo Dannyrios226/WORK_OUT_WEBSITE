@@ -332,46 +332,4 @@ function displayCardioWorkout() {
 
   alert(workoutMessage);
 }
-
-// Gets the durration of the rest timer 
-function getRestDuration() {
-  let userInput = prompt("Enter desired rest duration in minutes (e.g., 1, 2, 3, 4, or 5): ");
-
-  // Checks user input 
-  while (isNaN(userInput) || parseInt(userInput) <= 0 || parseInt(userInput) > 5) {
-    userInput = prompt("Invalid input. Please enter a number between 1 and 5: ");
-  }
-
-  return parseInt(userInput);
-}
-
-
-//starts timer 
-function startRestTimer(durationInMinutes) {
-  let timeLeft = durationInMinutes * 60; // Convert min to sec
-
-  const timerContainer = document.createElement("div"); 
-  timerContainer.classList.add("rest-timer-alert"); 
-
-  const timerDisplay = document.createElement("p");
-  timerDisplay.textContent = `${durationInMinutes}:${"00".padStart(2, "0")}`; 
-    
-  timerContainer.appendChild(timerDisplay);
-  document.body.appendChild(timerContainer); 
-
-  const timerInterval = setInterval(() => {
-    timeLeft--;
-
-    const minutes = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
-
-    timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
-
-    if (timeLeft === 0) {
-      clearInterval(timerInterval);
-      timerContainer.remove(); 
-
-      alert("Rest Over!"); 
-    }
-  }, 1000);
-}
+ 
