@@ -209,9 +209,24 @@ document.querySelectorAll(".random-workout-btn").forEach(button => {
     });
 });
 
+function getRandomExercises(category) {
+  // Check if category exists in the exercise data
+  if (!Object.hasOwnProperty.call(window, category)) {
+    return []; 
+  }
 
+function getPushWorkout() {
+  const randomPushExercises = getRandomExercises("pushExercises");
+  let workoutMessage = "**Push Workout:**\n";
 
+  randomPushExercises.forEach(exercise => {
+    workoutMessage += `- ${exercise.name} (${exercise.difficulty})\n`;
+  });
 
+  alert(workoutMessage); 
+}
+
+document.getElementById("push-workout-button").addEventListener("click", getPushWorkout); 
 
 
 
