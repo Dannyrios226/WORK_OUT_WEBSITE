@@ -470,10 +470,15 @@ function getRandomCardioExercises() {
  const randomDuration = durations[Math.floor(Math.random() * durations.length)];
  const exercises = cardioExercises[randomDuration];
  for (let i = 0; i < 2; i++) {
-  const randomIndex = Math.floor(Math.random() * exercises.length);
-  randomExercises.push(exercises[randomIndex]);
- }
- return randomExercises;
+  const randomDuration = durations[i];
+    const exercises = cardioExercises[randomDuration];
+    if (exercises && !randomExercises.some(exercise => exercise.duration === randomDuration)) {
+      const randomIndex = Math.floor(Math.random() * exercises.length);
+      randomExercises.push(exercises[randomIndex]);
+    }
+  }
+
+  return randomExercises;
 }
 
 // Display Cardio workouts with alert
