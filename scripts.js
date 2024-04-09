@@ -208,7 +208,7 @@ const celebrityWorkoutData = {
     { name: "Bench Press", sets: "4", reps: "8-12"},
     { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
     { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set: "1", reps: "30 minutes"},
+    { name: "Running", sets: "1", reps: "30 minutes"},
    
   ],
    "Halle Berry": [
@@ -236,115 +236,115 @@ const celebrityWorkoutData = {
     { name: "Bicep Curls", sets: "1", reps: "8-10"},
     { name: "Lunges", sets: "1", reps: "8-10"},
     { name: "Push Ups", sets: "1", reps: "8-10"},
-    { name: "Kettle Bell Swings", set: "1", reps: "8-10"},
-    { name: "Sitting Hip Thrusts", set: "1", reps: "8-10"},
+    { name: "Kettle Bell Swings", sets: "1", reps: "8-10"},
+    { name: "Sitting Hip Thrusts", sets: "1", reps: "8-10"},
   
   ],
  "Beyonce": [
     { name: "Explosive Push Ups", sets: "1", reps: "8-10"},
     { name: "Sprints", sets: "8-10", reps: "30 seconds"},
     { name: "Kettlebell Squats and Press", sets: "1", reps: "8-10"},
-    { name: "Ab Crunches", set: "1", reps: "8-10"},
+    { name: "Ab Crunches", sets: "1", reps: "8-10"},
    
   ],
  "Vanessa Hudgens": [
     { name: "Plank Walk Outs", sets: "2-3", reps: "8-10"},
     { name: "Band Squats", sets: "2-3", reps: "8-10"},
     { name: "High Knees", sets: "2-3", reps: "8-10"},
-    { name: "Weighted Deadlifts", set: "2-3", reps: "8-10"},
-    { name: "Back Squats", set: "2-3", reps: "8-10"},
+    { name: "Weighted Deadlifts", sets: "2-3", reps: "8-10"},
+    { name: "Back Squats", sets: "2-3", reps: "8-10"},
    
   ],
  "Cindy Crawford": [
     { name: "Weighted Squats", sets: "3", reps: "8-10"},
     { name: "Weighted Lunges", sets: "3", reps: "8-10"},
     { name: "Weighted Rows", sets: "3", reps: "12-15"},
-    { name: "Sprinting", set: "3", reps: "5 minutes"},
-     { name: "Plank", set: "3", reps: "1 minute"},
+    { name: "Sprinting", sets: "3", reps: "5 minutes"},
+     { name: "Plank", sets: "3", reps: "1 minute"},
    
   ],
  "Rebel Wilson": [
     { name: "reverse lunges", sets: "3-4", reps: "8-10"},
     { name: "One-legged Dead Lifts", sets: "3-4", reps: "8-10"},
     { name: "Push-ups", sets: "3-4", reps: "8-10"},
-    { name: "Rows", set: "3-4", reps: "8-10"},
-    { name: "Kettle Bell Swings", set: "3-4", reps: "8-10"},
+    { name: "Rows", sets: "3-4", reps: "8-10"},
+    { name: "Kettle Bell Swings", sets: "3-4", reps: "8-10"},
    
   ],
  "Blake Lively": [
     { name: "Bench Press", sets: "4", reps: "8-10"},
     { name: "Incline Dumbbell Press", sets: "3", reps: "8-10"},
     { name: "Tricep Pushdowns", sets: "3", reps: "8-10"},
-    { name: "Running", set: "1", reps: "8-10"},
+    { name: "Running", sets: "1", reps: "8-10"},
    
   ],
  "Ariana Grande": [
     { name: "Glute Bridge Skull Crushers", sets: "3", reps: "25"},
     { name: "Standing Rope Tricep Extensions", sets: "3", reps: "25"},
     { name: "Dumbell T-raises", sets: "3", reps: "25"},
-    { name: "Standing Cable Reverse Flys", set: "3", reps: "25"},
+    { name: "Standing Cable Reverse Flys", sets: "3", reps: "25"},
    
   ],
  "Khloe Kardashian": [
     { name: "Overhead Crunch Rotations", sets: "4", reps: "20"},
     { name: "4x4 Walks", sets: "4", reps: "20"},
     { name: "Renegade Row Mountain Clibers", sets: "4", reps: "20"},
-    { name: "Dumbell Presses", set: "4", reps: "20"},
-    { name: "Reverse Lunge Press", set: "4", reps: "20"},
+    { name: "Dumbell Presses", sets: "4", reps: "20"},
+    { name: "Reverse Lunge Press", sets: "4", reps: "20"},
    
   ],
  "Michael B. Jordan": [
     { name: "Crunches", sets: "3-5", reps: "25"},
     { name: "Leg Raises", sets: "3-5", reps: "25"},
     { name: "Reverse Crunches", sets: "3-5", reps: "25"},
-    { name: "Toe Touches", set: "3-5", reps: "25"},
+    { name: "Toe Touches", sets: "3-5", reps: "25"},
       { name: "Press and Push-ups Super Set", sets: "5", reps: "10"},
     { name: "Fly and Push-up Super Set", sets: "5", reps: "10"},
     { name: "Dumbell Curls", sets: "4", reps: "15"},
-    { name: "Hammer Curls", set: "3", reps: "12"},
-      { name: "Kickback and Dip Superset", set: "3", reps: "12"},
+    { name: "Hammer Curls", sets: "3", reps: "12"},
+      { name: "Kickback and Dip Superset", sets: "3", reps: "12"},
    
   ],
  "Scarlett Johansson": [
     { name: "Medicine Ball Slams", sets: "3", reps: "10-12"},
     { name: "Kettle Bell Swings", sets: "3", reps: "12-15"},
     { name: "Box Jumps", sets: "3", reps: "8"},
-    { name: "Push-ups", set: "3", reps: "10"},
+    { name: "Push-ups", sets: "3", reps: "10"},
    
   ],
  "Sofia Vergara": [
     { name: "Bodyweight Squats", sets: "3", reps: "15"},
     { name: "Romanian Dumbbell Deadlifts", sets: "3", reps: "12 mper leg"},
     { name: "Planks with leg lifts", sets: "3", reps: "30 seconds"},
-    { name: "Dumbbell Shoulder Press", set: "1", reps: "10-12"},
+    { name: "Dumbbell Shoulder Press", sets: "1", reps: "10-12"},
    
   ],
  "Chris Pratt": [
     { name: "Bench Press", sets: "4", reps: "8-12"},
     { name: "Barbell Rows", sets: "4", reps: "8-12"},
     { name: "Overhead Press", sets: "3", reps: "10-15"},
-    { name: "Weighted Lunges", set: "3", reps: "12"},
+    { name: "Weighted Lunges", sets: "3", reps: "12"},
    
   ],
  "Zendaya": [
     { name: "Planks", sets: "3", reps: "30 seconds"},
     { name: "Glute Bridges", sets: "3", reps: "15"},
     { name: "Dumbbell Romanian lifts", sets: "3", reps: "10"},
-    { name: "Running", set: "1", reps: "30 minutes"},
+    { name: "Running", sets: "1", reps: "30 minutes"},
    
   ],
  "Kerry Washington": [
     { name: "Push-ups", sets: "4", reps: "8-12"},
     { name: "Squats", sets: "3", reps: "10-12"},
     { name: "lunges", sets: "3", reps: "12-14"},
-    { name: "Burpees", set: "1", reps: "10"},
+    { name: "Burpees", sets: "1", reps: "10"},
    
   ],
  "Olivia Munn": [
     { name: "Pilates Ball Bridge", sets: "4", reps: "10-12"},
     { name: "Squats with kettle bell", sets: "3", reps: "12"},
     { name: "Dumbell Bench Press", sets: "3", reps: "10-12"},
-    { name: "Running", set: "1", reps: "30 minutes"},
+    { name: "Running", sets: "1", reps: "30 minutes"},
    
   ],
  "Keanu Reeves": [
