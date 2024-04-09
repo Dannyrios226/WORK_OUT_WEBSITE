@@ -79,11 +79,11 @@ const pushExercises = {
         { name: "Incline Barbell Press", difficulty: "Intermediate" },
         { name: "assisted Dips", difficulty: "beginner" },
         { name: "Incline Dumbbell Flyes", difficulty: "Intermediate" },
-        { name: "Chest Press Machine", difficulty: "beginner" },
-        { name: "Cable Crossover", difficulty: "beginner" },
-        { name: "Incline bench Press", difficulty: "Intermediate" },
-        { name: "Incline Cable Press", difficulty: "Intermediate" },
-        { name: "Decline Cable Press", difficulty: "Intermediate" },
+        // { name: "Chest Press Machine", difficulty: "beginner" },
+        // { name: "Cable Crossover", difficulty: "beginner" },
+        // { name: "Incline bench Press", difficulty: "Intermediate" },
+        // { name: "Incline Cable Press", difficulty: "Intermediate" },
+        // { name: "Decline Cable Press", difficulty: "Intermediate" },
        
     ],
     triceps: [
@@ -94,11 +94,11 @@ const pushExercises = {
      { name: "Seated Tricep Dips", difficulty: "beginner" },
      { name: "Close-Grip Bench Press", difficulty: "Intermediate" },
      { name: "Decline Skull Crushers", difficulty: "Intermediate" },
-     { name: "Lying Tricep Extensions", difficulty: "Intermediate" },
-     { name: "Rope Pushdowns", difficulty: "Intermediate" },
-     { name: "Bar Pushdowns", difficulty: "beginner" },
-     { name: "Tricep Kick Backs", difficulty: "Intermediate" },
-     { name: "Diamond Push Ups", difficulty: "Intermediate" },
+     // { name: "Lying Tricep Extensions", difficulty: "Intermediate" },
+     // { name: "Rope Pushdowns", difficulty: "Intermediate" },
+     // { name: "Bar Pushdowns", difficulty: "beginner" },
+     // { name: "Tricep Kick Backs", difficulty: "Intermediate" },
+     // { name: "Diamond Push Ups", difficulty: "Intermediate" },
      
        
     ],
@@ -110,11 +110,11 @@ const pushExercises = {
         { name: "External Rotations With Band", difficulty: "Beginner" },
         { name: "External Rotations With Cable", difficulty: "Intermediate" },
         { name: "Arnold Press", difficulty: "Intermediate" },
-        { name: "Military Press", difficulty: "Intermediate" },
-        { name: "Face Pulls", difficulty: "Intermediate" },
-        { name: "LandminePress", difficulty: "intermediate" },
-        { name: "Plank With Shoulder Tap", difficulty: "Beginner" },
-        { name: "Shoulder Press Machine", difficulty: "Beginner" },
+        // { name: "Military Press", difficulty: "Intermediate" },
+        // { name: "Face Pulls", difficulty: "Intermediate" },
+        // { name: "LandminePress", difficulty: "intermediate" },
+        // { name: "Plank With Shoulder Tap", difficulty: "Beginner" },
+        // { name: "Shoulder Press Machine", difficulty: "Beginner" },
     ]
 };
 const pullExercises = {
