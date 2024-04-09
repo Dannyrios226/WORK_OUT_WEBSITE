@@ -34,7 +34,7 @@ body {
 }
 
 .card-content {
-    padding: 20px;
+    adding: 20px 10px 20px 10px;
     font-family: "Impact";
     color: #777;
 }
