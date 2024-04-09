@@ -23,7 +23,6 @@ body {
     justify-content: center;
     margin: 20px;
     text-align: center;
-    align-items: center;
 }
 
 .card {
@@ -59,7 +58,7 @@ body {
 
 button {
     text-align: center;
-    background-color: ##777;
+    background-color: ##555;
     border: none;
     padding-left: 10px;
     padding-right: 10px;
