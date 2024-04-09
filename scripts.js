@@ -204,12 +204,12 @@ const cardioExercises = {
 };
 
 const celebrityWorkoutData = {
-  "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", sets: "1", reps: "30 minutes"},
-   
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12" },
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15" },
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15" },
+    { name: "Running", sets: "1", reps: "30 minutes" },
+  
   ],
    "Halle Berry": [
     { name: "Squats", sets: "3", reps: "15-20"},
@@ -232,19 +232,19 @@ const celebrityWorkoutData = {
     { name: "Sprints", sets: "6", reps: "100 meters"},
    
   ],
- "J-Lo": [
-    { name: "Bicep Curls", sets: "1", reps: "8-10"},
-    { name: "Lunges", sets: "1", reps: "8-10"},
-    { name: "Push Ups", sets: "1", reps: "8-10"},
-    { name: "Kettle Bell Swings", sets: "1", reps: "8-10"},
-    { name: "Sitting Hip Thrusts", sets: "1", reps: "8-10"},
-  
+  "J-Lo": [
+    { name: "Bicep Curls", sets: "3", reps: "8-10" }, 
+    { name: "Lunges", sets: "3", reps: "8-10" },
+    { name: "Push Ups", sets: "3", reps: "8-10" },
+    { name: "Kettle Bell Swings", sets: "3", reps: "8-10" },
+    { name: "Sitting Hip Thrusts", sets: "3", reps: "8-10" },
+   
   ],
- "Beyonce": [
-    { name: "Explosive Push Ups", sets: "1", reps: "8-10"},
-    { name: "Sprints", sets: "8-10", reps: "30 seconds"},
-    { name: "Kettlebell Squats and Press", sets: "1", reps: "8-10"},
-    { name: "Ab Crunches", sets: "1", reps: "8-10"},
+  "Beyonce": [
+    { name: "Explosive Push Ups", sets: "3", reps: "8-10" },
+    { name: "Sprints", sets: "8", reps: "30 seconds" }, 
+    { name: "Kettlebell Squats and Press", sets: "3", reps: "8-10" },
+    { name: "Ab Crunches", sets: "3", reps: "8-10" },
    
   ],
  "Vanessa Hudgens": [
