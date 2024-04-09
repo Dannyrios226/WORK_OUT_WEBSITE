@@ -91,9 +91,9 @@ const pushExercises = {
         { name: "Tricep Dips", difficulty: "Intermediate" },
         { name: "Tricep Extension", difficulty: "Intermediate" },
         { name: "Skull Crushers", difficulty: "Intermediate" },
-     { name: "Overhead Tricep Extentions", difficulty: "beginner" },
-     { name: "Seated Tricep Dips", difficulty: "beginner" },
-     { name: "Close-Grip Bench Press", difficulty: "Intermediate" },
+        { name: "Overhead Tricep Extentions", difficulty: "beginner" },
+        { name: "Seated Tricep Dips", difficulty: "beginner" },
+        { name: "Close-Grip Bench Press", difficulty: "Intermediate" },
      // { name: "Decline Skull Crushers", difficulty: "Intermediate" },
      // { name: "Lying Tricep Extensions", difficulty: "Intermediate" },
      // { name: "Rope Pushdowns", difficulty: "Intermediate" },
@@ -110,7 +110,7 @@ const pushExercises = {
         { name: "Reverse Fly", difficulty: "Intermediate" },
         { name: "External Rotations With Band", difficulty: "Beginner" },
         { name: "External Rotations With Cable", difficulty: "Intermediate" },
-        { name: "Arnold Press", difficulty: "Intermediate" },
+        //{ name: "Arnold Press", difficulty: "Intermediate" },
         // { name: "Military Press", difficulty: "Intermediate" },
         // { name: "Face Pulls", difficulty: "Intermediate" },
         // { name: "LandminePress", difficulty: "intermediate" },
@@ -151,19 +151,27 @@ const legExercises = {
     quads: [
         { name: "Squats", difficulty: "Intermediate" },
         { name: "Leg Press", difficulty: "Intermediate" },
-        { name: "Lunges", difficulty: "Intermediate" },
+        { name: "Lunges", difficulty: "beginner" },
+        { name: "Goblet Squats", difficulty: "Intermediate" },
+        { name: "Pause Squats", difficulty: "Intermediate" },
+        { name: "Leg extentions", difficulty: "beginner" },
       
     ],
     hamstrings: [
         { name: "KettleBell Swings", difficulty: "Intermediate" },
         { name: "Leg Curls", difficulty: "Intermediate" },
         { name: "Split Squats", difficulty: "Intermediate" },
-     
+        { name: "Sumo Deadlifts", difficulty: "Intermediate" },
+        { name: "lying Leg Press", difficulty: "beginner" },
+        { name: "Seated Leg Curls", difficulty: "beginner" },
     ],
     glutes: [
-        { name: "Hip Thrusts", difficulty: "Intermediate" },
+        { name: "Barbell Hip Thrusts", difficulty: "Intermediate" },
         { name: "Glute Bridge", difficulty: "Beginner" },
         { name: "Hip Extention", difficulty: "Beginner" },
+      { name: "Dumbbell Hip Thrusts", difficulty: "Intermediate" },
+        { name: "Single Leg Squats", difficulty: "Beginner" },
+        { name: "Step ups", difficulty: "Beginner" },
     ]
 };
 const cardioExercises = {
@@ -171,11 +179,17 @@ const cardioExercises = {
         { name: "Jump Rope", difficulty: "Beginner" },
         { name: "High Knees", difficulty: "Beginner" },
         { name: "Burpees", difficulty: "Intermediate" },
+     { name: "Jumping Jacks", difficulty: "Beginner" },
+        { name: "Tabata Sprints", difficulty: "Intermediate" },
+        { name: "Stair Running", difficulty: "Intermediate" },
      
     ],
     "30-minute": [
         { name: "jogging", difficulty: "Intermediate" },
-        { name: "rowing", difficulty: "Intermediate" },
+        { name: "rowing", difficulty: "beginner" },
+        { name: "Elliptical", difficulty: "Intermediate" },
+      { name: "Mountain Climbers", difficulty: "Intermediate" },
+        { name: "Butt Kicks", difficulty: "Intermediate" },
         { name: "Elliptical", difficulty: "Intermediate" },
       
     ],
@@ -183,7 +197,9 @@ const cardioExercises = {
         { name: "Swimming", difficulty: "Intermediate" },
         { name: "biking", difficulty: "Intermediate" },
         { name: "walking", difficulty: "beginer" },
-        
+        { name: "Hiking", difficulty: "Intermediate" },
+        { name: "BasketBall", difficulty: "Intermediate" },
+        { name: "Boxing", difficulty: "Intermediate" },
     ]
 };
 
