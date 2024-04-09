@@ -178,11 +178,11 @@ const cardioExercises = {
     ]
 };
 
-function displayCardioWorkout() {
+	@@ -481,7 +481,7 @@ function displayCardioWorkout() {
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; 
+    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; // Assuming first exercise defines duration
   }
   alert(workoutMessage);
 }
@@ -285,4 +285,4 @@ function quoteAlert() {
     console.log("Button Clicked!")
     alert("To anyone and Everyone who reads this, You are special and you are the main character in the amazing movie you call life. Have a wonderful day and keep on shining");
 }
-              
+     
