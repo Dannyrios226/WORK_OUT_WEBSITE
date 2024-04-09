@@ -25,6 +25,10 @@
         </div>
     </div>
     <div class="footer">
+         <input type="text" id="search-input" placeholder="Search Card Exercises " >
+        <button onclick="searchExercises(document.getElementById('search-input').value)">
+            Search
+        </button>
         <button onclick="displayPushWorkout();">
             Push Workout
         </button>
@@ -43,9 +47,8 @@
         <button onclick="displayRandomCelebrityWorkout();">
             Get a Random Celeb Workout 
         </button>
-        <input type="text" id="search-input" placeholder="Search Card Exercises " >
-        <button onclick="searchExercises(document.getElementById('search-input').value)">
-            Search
+        <button onclick="quoteAlert();">
+            CLICK FOR A SUPRISE
         </button>
     </div>
 </body>
