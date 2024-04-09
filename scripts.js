@@ -44,7 +44,7 @@ const workoutData = [
  {
   title: "CARDIO",
   imageURL: Cardio_URL,
-  bulletPoints: ["Cardio consists of 15-30-45 minute exercises   ", "\n\nCardio is great for heart health   ", "\n\nCardio is a crucial part of your overall fitness   "],
+  bulletPoints: ["Cardio consists of 15-20-30 minute exercises   ", "\n\nCardio is great for heart health   ", "\n\nCardio is a crucial part of your overall fitness   "],
  },
 ];
 const pushExercises = {
@@ -161,21 +161,21 @@ const cardioExercises = {
    
   ],
   "30-minute": [
-    { name: "30-minute jogging", difficulty: "Intermediate" },
-    { name: "30-minute rowing", difficulty: "beginner" },
-    { name: "30-minute Elliptical", difficulty: "Intermediate" },
-   { name: "30-minute Mountain Climbers", difficulty: "Intermediate" },
-    { name: "30-minute Butt Kicks", difficulty: "Intermediate" },
-    { name: "30-minute Elliptical", difficulty: "Intermediate" },
+    { name: "20-minute jogging", difficulty: "Intermediate" },
+    { name: "20-minute rowing", difficulty: "beginner" },
+    { name: "20-minute Elliptical", difficulty: "Intermediate" },
+   { name: "20-minute Mountain Climbers", difficulty: "Intermediate" },
+    { name: "20-minute Butt Kicks", difficulty: "Intermediate" },
+    { name: "20-minute Elliptical", difficulty: "Intermediate" },
     
   ],
   "45-minute": [
-    { name: "45-minute Swimming", difficulty: "Intermediate" },
-    { name: "45-minute biking", difficulty: "Intermediate" },
-    { name: "45-minute walking", difficulty: "beginer" },
-    { name: "45-minute Hiking", difficulty: "Intermediate" },
-    { name: "45-minute BasketBall", difficulty: "Intermediate" },
-    { name: "45-minute Boxing", difficulty: "Intermediate" },
+    { name: "30-minute Swimming", difficulty: "Intermediate" },
+    { name: "30-minute biking", difficulty: "Intermediate" },
+    { name: "30-minute walking", difficulty: "beginer" },
+    { name: "30-minute Hiking", difficulty: "Intermediate" },
+    { name: "30-minute BasketBall", difficulty: "Intermediate" },
+    { name: "30-minute Boxing", difficulty: "Intermediate" },
   ]
 };
 
@@ -470,16 +470,12 @@ function getRandomCardioExercises() {
  const randomDuration = durations[Math.floor(Math.random() * durations.length)];
  const exercises = cardioExercises[randomDuration];
  for (let i = 0; i < 2; i++) {
-  const randomDuration = durations[i];
-    const exercises = cardioExercises[randomDuration];
-    if (exercises && !randomExercises.some(exercise => exercise.duration === randomDuration)) {
-      const randomIndex = Math.floor(Math.random() * exercises.length);
-      randomExercises.push(exercises[randomIndex]);
-    }
-  }
-
-  return randomExercises;
+  const randomIndex = Math.floor(Math.random() * exercises.length);
+  randomExercises.push(exercises[randomIndex]);
+ }
+ return randomExercises;
 }
+
 
 // Display Cardio workouts with alert
 function displayCardioWorkout() {
