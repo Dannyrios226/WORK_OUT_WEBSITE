@@ -3,6 +3,16 @@
  * 1. figure out how to murge the randomizing functions properly so that there isnt a repetative amount of code for each workout type. 
  * 2. Implement a rest timer
  * 3. Make it to where the celeb workouts are more detailed for example The rocks monday workout or tuesday workout or full body workrout etc etc 
+ * 4. add set counter to track workout
+ * 5. add high intensity low volume workout option and low intensity high volume option
+ * 6. add workut suggestions aka like easy workout athletic workout calisthenics 
+ * 7. add recovery workouts like stretch 
+ * 8. add a yoga plan (short yoga workouts maybe 15min-30min-1hr workouts)
+ * 9. add a more filters into search like intensity   
+ * 10. add an option for workouts that you can do at home 
+ * 11. add info on workouts and what to do for them maybe a link to a short youtube video explaining what to do 
+
+
  
  * Data Catalog Project Starter Code - SEA Stage 2
  *
@@ -27,9 +37,9 @@
  *    with the string you added to the array, but a broken image.
  * 
  */
-const FRESH_PRINCE_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
+const PUSH_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
+const PULL_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
+const LEGS_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
 const Cardio_URL = "https://m.media-amazon.com/images/I/61jnhf7QjbL._AC_SL1135_.jpg"
 // This is an array of strings (TV show titles)
 let titles = [
@@ -41,17 +51,17 @@ let titles = [
 const workoutData = [
   {
     title: "PUSH",
-    imageURL: FRESH_PRINCE_URL,
+    imageURL: PUSH_URL,
     bulletPoints: ["Push consists of Chest, Triceps, Shoulders", "\nThis is Arnold Schwarzenegger ", "\nHe was Mr. Olypia seven times"],
   },
   {
     title: "PULL",
-    imageURL: CURB_POSTER_URL,
+    imageURL: PULL_URL,
     bulletPoints: ["Pull consists of Back, Biceps, Traps", "\nThis is Mike Mentzer", "\nIn 1978, Mentzer won the Mr. Universe in Acapulco with the a perfect 300 score."],
   },
   {
     title: "LEGS",
-    imageURL: EAST_LOS_HIGH_POSTER_URL, // Customize image URL for Legs
+    imageURL: LEGS_URL, // Customize image URL for Legs
     bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "\nThis is Jay Cutler", "\nHe is a four time Mr. Olypia champion"],
   },
   {
