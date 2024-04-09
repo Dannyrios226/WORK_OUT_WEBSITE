@@ -29,17 +29,17 @@ const workoutData = [
   {
     title: "PUSH",
     imageURL: PUSH_URL,
-    bulletPoints: [`Push consists of Chest, Triceps, Shoulders`,`\nThis is Arnold Schwarzenegger `,`\nHe was Mr. Olympia seven times`],
+    bulletPoints: ["Push consists of Chest, Triceps, Shoulders","\nThis is Arnold Schwarzenegger ","\nHe was Mr. Olympia seven times"],
   },
   {
     title: "PULL",
     imageURL: PULL_URL,
-    bulletPoints: [`Pull consists of Back, Biceps, Traps`,`\nThis is Mike Mentzer`,`\nIn 1978, Mentzer won the Mr. Universe in Acapulco with a perfect 300 score.`],
+    bulletPoints: ["Pull consists of Back, Biceps, Traps","\nThis is Mike Mentzer","\nIn 1978, Mentzer won the Mr. Universe in Acapulco with a perfect 300 score."],
   },
   {
     title: "LEGS",
     imageURL: LEGS_URL, // Customize image URL for Legs
-    bulletPoints: [`Legs consists of Hamstrings, Quads, Glutes`,`\nThis is Jay Cutler`,`\nHe is a four-time Mr. Olympia champion`],
+    bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes","\nThis is Jay Cutler","\nHe is a four-time Mr. Olympia champion"],
   },
   {
     title: "CARDIO",
