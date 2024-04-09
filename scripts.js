@@ -78,7 +78,7 @@ const pushExercises = {
         { name: "Incline Dumbbell Press", difficulty: "Intermediate" },
         { name: "Incline Barbell Press", difficulty: "Intermediate" },
         { name: "assisted Dips", difficulty: "beginner" },
-        { name: "Incline Dumbbell Flyes", difficulty: "Intermediate" },
+        // { name: "Incline Dumbbell Flyes", difficulty: "Intermediate" },
         // { name: "Chest Press Machine", difficulty: "beginner" },
         // { name: "Cable Crossover", difficulty: "beginner" },
         // { name: "Incline bench Press", difficulty: "Intermediate" },
