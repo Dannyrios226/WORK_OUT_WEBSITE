@@ -11,6 +11,7 @@
  * 9. add a more filters into search like intensity   
  * 10. add an option for workouts that you can do at home 
  * 11. add info on workouts and what to do for them maybe a link to a short youtube video explaining what to do 
+ * 12. fix alert only showing a limited amount of Lines 
 
 
  
@@ -122,18 +123,27 @@ const pullExercises = {
         { name: "Pull-up", difficulty: "Intermediate" },
         { name: "Deadlift", difficulty: "Intermediate" },
         { name: "Barbell Row", difficulty: "Intermediate" },
+        { name: "Dumbell Rows", difficulty: "Intermediate" },
+        { name: "Cable Rows", difficulty: "beginner" },
+        { name: "Lat Pull Down", difficulty: "beginner" },
      
     ],
     biceps: [
         { name: "Bicep Curl", difficulty: "Beginner" },
         { name: "Hammer Curl", difficulty: "Beginner" },
         { name: "Preacher Curl", difficulty: "Intermediate" },
+        { name: "Rope Pulls", difficulty: "Beginner" },
+        { name: "Ez-Bar Curl", difficulty: "Beginner" },
+        { name: "Chin-Ups", difficulty: "Intermediate" },
  
     ],
     traps: [
         { name: "Dumbbell Shrugs", difficulty: "Beginner" },
         { name: "Barbell Shrugs", difficulty: "Intermediate" },
         { name: "Up right rows", difficulty: "Intermediate" },
+        { name: "Upright Cable Rows", difficulty: "Beginner" },
+        { name: "Seated Shrugs With Machine", difficulty: "Beginner" },
+        { name: "Upright Barbell Rows", difficulty: "Intermediate" },
   
     ]
 };
