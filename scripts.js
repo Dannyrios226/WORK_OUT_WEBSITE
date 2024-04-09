@@ -208,21 +208,21 @@ const celebrityWorkoutData = {
     { name: "Bench Press", sets: "4", reps: "8-12"},
     { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
     { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+    { name: "Running", set: "1", reps: "30 minutes"},
    
   ],
    "Halle Berry": [
     { name: "Squats", sets: "3", reps: "15-20"},
     { name: "Push-Ups", sets: "3", reps: "10-15"},
     { name: "Lunges", sets: "3", reps: "10 per leg"},
-    { name: "Running", sets:"1", reps: "30 minutes"},
+    { name: "Running", sets: "1", reps: "30 minutes"},
    
   ],
   "Dwayne 'The Rock' Johnson": [
     { name: "Barbell Squats", sets: "5", reps: "5-8"},
     { name: "Leg Press", sets: "3", reps: "10-12"},
     { name: "Pull ups", sets: "1", reps: "Until Failure"},
-    { name: "Stair Sprints", sets:"5", reps:"30 seconds work, 30 seconds rest"},
+    { name: "Stair Sprints", sets: "5", reps:"30 seconds work, 30 seconds rest"},
    
   ],
  "Serena Williams": [
@@ -236,122 +236,122 @@ const celebrityWorkoutData = {
     { name: "Bicep Curls", sets: "1", reps: "8-10"},
     { name: "Lunges", sets: "1", reps: "8-10"},
     { name: "Push Ups", sets: "1", reps: "8-10"},
-    { name: "Kettle Bell Swings", set:"1", reps: "8-10"},
-    { name: "Sitting Hip Thrusts", set:"1", reps: "8-10"},
+    { name: "Kettle Bell Swings", set: "1", reps: "8-10"},
+    { name: "Sitting Hip Thrusts", set: "1", reps: "8-10"},
   
   ],
  "Beyonce": [
     { name: "Explosive Push Ups", sets: "1", reps: "8-10"},
     { name: "Sprints", sets: "8-10", reps: "30 seconds"},
     { name: "Kettlebell Squats and Press", sets: "1", reps: "8-10"},
-    { name: "Ab Crunches", set:"1", reps: "8-10"},
+    { name: "Ab Crunches", set: "1", reps: "8-10"},
    
   ],
  "Vanessa Hudgens": [
     { name: "Plank Walk Outs", sets: "2-3", reps: "8-10"},
     { name: "Band Squats", sets: "2-3", reps: "8-10"},
     { name: "High Knees", sets: "2-3", reps: "8-10"},
-    { name: "Weighted Deadlifts", set:"2-3", reps: "8-10"},
-    { name: "Back Squats", set:"2-3", reps: "8-10"},
+    { name: "Weighted Deadlifts", set: "2-3", reps: "8-10"},
+    { name: "Back Squats", set: "2-3", reps: "8-10"},
    
   ],
  "Cindy Crawford": [
     { name: "Weighted Squats", sets: "3", reps: "8-10"},
     { name: "Weighted Lunges", sets: "3", reps: "8-10"},
     { name: "Weighted Rows", sets: "3", reps: "12-15"},
-    { name: "Sprinting", set:"3", reps: "5 minutes"},
-     { name: "Plank", set:"3", reps: "1 minute"},
+    { name: "Sprinting", set: "3", reps: "5 minutes"},
+     { name: "Plank", set: "3", reps: "1 minute"},
    
   ],
  "Rebel Wilson": [
     { name: "reverse lunges", sets: "3-4", reps: "8-10"},
     { name: "One-legged Dead Lifts", sets: "3-4", reps: "8-10"},
     { name: "Push-ups", sets: "3-4", reps: "8-10"},
-    { name: "Rows", set:"3-4", reps: "8-10"},
-    { name: "Kettle Bell Swings", set:"3-4", reps: "8-10"},
+    { name: "Rows", set: "3-4", reps: "8-10"},
+    { name: "Kettle Bell Swings", set: "3-4", reps: "8-10"},
    
   ],
  "Blake Lively": [
     { name: "Bench Press", sets: "4", reps: "8-10"},
     { name: "Incline Dumbbell Press", sets: "3", reps: "8-10"},
     { name: "Tricep Pushdowns", sets: "3", reps: "8-10"},
-    { name: "Running", set:"1", reps: "8-10"},
+    { name: "Running", set: "1", reps: "8-10"},
    
   ],
  "Ariana Grande": [
     { name: "Glute Bridge Skull Crushers", sets: "3", reps: "25"},
     { name: "Standing Rope Tricep Extensions", sets: "3", reps: "25"},
     { name: "Dumbell T-raises", sets: "3", reps: "25"},
-    { name: "Standing Cable Reverse Flys", set:"3", reps: "25"},
+    { name: "Standing Cable Reverse Flys", set: "3", reps: "25"},
    
   ],
  "Khloe Kardashian": [
     { name: "Overhead Crunch Rotations", sets: "4", reps: "20"},
     { name: "4x4 Walks", sets: "4", reps: "20"},
     { name: "Renegade Row Mountain Clibers", sets: "4", reps: "20"},
-    { name: "Dumbell Presses", set:"4", reps: "20"},
-    { name: "Reverse Lunge Press", set:"4", reps: "20"},
+    { name: "Dumbell Presses", set: "4", reps: "20"},
+    { name: "Reverse Lunge Press", set: "4", reps: "20"},
    
   ],
  "Michael B. Jordan": [
     { name: "Crunches", sets: "3-5", reps: "25"},
     { name: "Leg Raises", sets: "3-5", reps: "25"},
     { name: "Reverse Crunches", sets: "3-5", reps: "25"},
-    { name: "Toe Touches", set:"3-5", reps: "25"},
+    { name: "Toe Touches", set: "3-5", reps: "25"},
       { name: "Press and Push-ups Super Set", sets: "5", reps: "10"},
     { name: "Fly and Push-up Super Set", sets: "5", reps: "10"},
     { name: "Dumbell Curls", sets: "4", reps: "15"},
-    { name: "Hammer Curls", set:"3", reps: "12"},
+    { name: "Hammer Curls", set: "3", reps: "12"},
       { name: "Kickback and Dip Superset", set:"3", reps: "12"},
    
   ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+ "Ryan Renolds": [
+    { name: "Pull-ups", sets: "3", reps: "Until Failure"},
+    { name: "Dips", sets: "3", reps: "Until Failure"},
+    { name: "Weighted Lunges", sets: "3", reps: "10 per leg"},
+    { name: "Dumbbell Overhead Press", set: "3", reps: "8-12"},
    
   ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+ "Scarlett Johansson": [
+    { name: "Medicine Ball Slams", sets: "3", reps: "10-12"},
+    { name: "Kettlebell Swings", sets: "3", reps: "12-15"},
+    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "10-15"},
+    { name: "Push-ups", set: "3", reps: "Until Failure"},
    
   ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+"Sofia Vergara": [
+    { name: "Bodyweight Squats", sets: "3", reps: "15"},
+    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "12 per leg"},
+    { name: "Dumbell Shoulder Press", sets: "3", reps: "10-12"},
+    { name: "Planks with leg lifts", set: "3", reps: "30 seconds"},
    
   ],
- "Chris Hemsworth": [
+"Chris Pratt": [
     { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+    { name: "Barbell Rows", sets: "4", reps: "8-12"},
+    { name: "Overhead Press", sets: "3", reps: "10-15"},
+    { name: "Weighted Lunges", set: "3", reps: "12 reps per leg"},
+ 
+  ],
+ "Zendaya": [
+    { name: "Planks", sets: "3", reps: "30 seconds"},
+    { name: "Glute Bridges", sets: "3", reps: "15"},
+    { name: "Dumbell Romanian Deadlifts", sets: "3", reps: "10 per leg"},
+    { name: "Push-ups", set: "3", reps: "until Failure"},
    
   ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
-   
+ "Kerry Washington": [
+    { name: "Push-ups", sets: "3", reps: "Until Faliure"},
+    { name: "Squats", sets: "3", reps: "15"},
+    { name: "Lunges", sets: "3", reps: "10"},
+    { name: "Burpees", set: "3", reps: "10"},
+  
   ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
-   
-  ],
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
-    { name: "Running", set:"1", reps: "30 minutes"},
+ "Olivia Munn": [
+    { name: "Dumbell Bench Press", sets: "3", reps: "10-12"},
+    { name: "Squats With Kettlebell", sets: "3", reps: "12"},
+    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "10 per leg"},
+    { name: "Pilates Ball bridges", set: "3", reps: "15"},
    
   ]
 };
