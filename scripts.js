@@ -29,22 +29,22 @@ const workoutData = [
  {
   title: "PUSH",
   imageURL: PUSH_URL,
-  bulletPoints: ["Push consists of Chest, Triceps, Shoulders", "\nThis is Arnold Schwarzenegger ", "\nHe was Mr. Olympia seven times"],
+  bulletPoints: ["Push consists of Chest, Triceps, Shoulders   ", "\nThis is Arnold Schwarzenegger   ", "\nHe was Mr. Olympia seven times   "],
  },
  {
   title: "PULL",
   imageURL: PULL_URL,
-  bulletPoints: ["Pull consists of Back, Biceps, Traps", "\n\nThis is Mike Mentzer", "\n\nIn 1978, Mentzer won the Mr. Universe in Acapulco with a perfect 300 score."],
+  bulletPoints: ["Pull consists of Back, Biceps, Traps   ", "\n\nThis is Mike Mentzer   ", "\n\nIn 1978, Mentzer won the Mr. Universe in Acapulco with a perfect 300 score.   "],
  },
  {
   title: "LEGS",
   imageURL: LEGS_URL, // Customize image URL for Legs
-  bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "\n\nThis is Jay Cutler", "\n\nHe is a four-time Mr. Olympia champion"],
+  bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes   ", "\n\nThis is Jay Cutler   ", "\n\nHe is a four-time Mr. Olympia champion   "],
  },
  {
   title: "CARDIO",
   imageURL: Cardio_URL,
-  bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "\n\nCardio is great for heart health", "\n\nCardio is a crucial part of your overall fitness"],
+  bulletPoints: ["Cardio consists of 15-30-45 minute exercises   ", "\n\nCardio is great for heart health   ", "\n\nCardio is a crucial part of your overall fitness   "],
  },
 ];
 const pushExercises = {
