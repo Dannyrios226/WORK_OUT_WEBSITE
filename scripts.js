@@ -178,7 +178,7 @@ const cardioExercises = {
     ]
 };
 
-	@@ -481,7 +481,7 @@ function displayCardioWorkout() {
+ function displayCardioWorkout() {
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
