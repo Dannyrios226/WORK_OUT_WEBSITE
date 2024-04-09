@@ -58,17 +58,17 @@ const workoutData = [
   {
     title: "PULL",
     imageURL: PULL_URL,
-    bulletPoints: ["Pull consists of Back, Biceps, Traps", "\nThis is Mike Mentzer", "\nIn 1978, Mentzer won the Mr. Universe in Acapulco with the a perfect 300 score."],
+    bulletPoints: ["Pull consists of Back, Biceps, Traps", "\n\nThis is Mike Mentzer", "\n\nIn 1978, Mentzer won the Mr. Universe in Acapulco with the a perfect 300 score."],
   },
   {
     title: "LEGS",
     imageURL: LEGS_URL, // Customize image URL for Legs
-    bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "\nThis is Jay Cutler", "\nHe is a four time Mr. Olypia champion"],
+    bulletPoints: ["Legs consists of Hamstrings, Quads, Glutes", "\n\nThis is Jay Cutler", "\n\nHe is a four time Mr. Olypia champion"],
   },
   {
     title: "CARDIO",
     imageURL: Cardio_URL,
-    bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "\nCardio is greate for heart health", "\nCardio is a crutial part of your overal fitness"],
+    bulletPoints: ["Cardio consists of 15-30-45 minute exercises", "\n\nCardio is greate for heart health", "\n\nCardio is a crutial part of your overal fitness"],
   },
 ];
 const pushExercises = {
