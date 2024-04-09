@@ -29,7 +29,7 @@ body {
     margin: 5px;
 }
 .card-content {
-    adding: 20px 10px 20px 10px;
+    padding: 20px;
     font-family: "Impact";
     color: #777;
 }
