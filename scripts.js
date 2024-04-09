@@ -152,30 +152,30 @@ const legExercises = {
 };
 const cardioExercises = {
     "15-minute": [
-        { name: "Jump Rope", difficulty: "Beginner" },
-        { name: "High Knees", difficulty: "Beginner" },
-        { name: "Burpees", difficulty: "Intermediate" },
-     { name: "Jumping Jacks", difficulty: "Beginner" },
-        { name: "Tabata Sprints", difficulty: "Intermediate" },
-        { name: "Stair Running", difficulty: "Intermediate" },
+        { name: "15-min Jump Rope", difficulty: "Beginner" },
+        { name: "15-min High Knees", difficulty: "Beginner" },
+        { name: "15-min Burpees", difficulty: "Intermediate" },
+     { name: "15-min Jumping Jacks", difficulty: "Beginner" },
+        { name: "15-min Tabata Sprints", difficulty: "Intermediate" },
+        { name: "15-min Stair Running", difficulty: "Intermediate" },
      
     ],
     "30-minute": [
-        { name: "jogging", difficulty: "Intermediate" },
-        { name: "rowing", difficulty: "beginner" },
-        { name: "Elliptical", difficulty: "Intermediate" },
-      { name: "Mountain Climbers", difficulty: "Intermediate" },
-        { name: "Butt Kicks", difficulty: "Intermediate" },
-        { name: "Elliptical", difficulty: "Intermediate" },
+        { name: "30-minute jogging", difficulty: "Intermediate" },
+        { name: "30-minute rowing", difficulty: "beginner" },
+        { name: "30-minute Elliptical", difficulty: "Intermediate" },
+      { name: "30-minute Mountain Climbers", difficulty: "Intermediate" },
+        { name: "30-minute Butt Kicks", difficulty: "Intermediate" },
+        { name: "30-minute Elliptical", difficulty: "Intermediate" },
       
     ],
     "45-minute": [
-        { name: "Swimming", difficulty: "Intermediate" },
-        { name: "biking", difficulty: "Intermediate" },
-        { name: "walking", difficulty: "beginer" },
-        { name: "Hiking", difficulty: "Intermediate" },
-        { name: "BasketBall", difficulty: "Intermediate" },
-        { name: "Boxing", difficulty: "Intermediate" },
+        { name: "45-minute Swimming", difficulty: "Intermediate" },
+        { name: "45-minute biking", difficulty: "Intermediate" },
+        { name: "45-minute walking", difficulty: "beginer" },
+        { name: "45-minute Hiking", difficulty: "Intermediate" },
+        { name: "45-minute BasketBall", difficulty: "Intermediate" },
+        { name: "45-minute Boxing", difficulty: "Intermediate" },
     ]
 };
 
@@ -481,7 +481,7 @@ function displayCardioWorkout() {
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; // Assuming first exercise defines duration
+    workoutMessage += `- ${exercise.name} (Difficulty: ${randomExercises.difficulty) \n`;
   }
 
   alert(workoutMessage);
