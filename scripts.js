@@ -182,7 +182,7 @@ const cardioExercises = {
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; // Assuming first exercise defines duration
+    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; 
   }
   alert(workoutMessage);
 }
