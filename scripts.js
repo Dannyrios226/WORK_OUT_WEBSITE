@@ -302,56 +302,56 @@ const celebrityWorkoutData = {
     { name: "Fly and Push-up Super Set", sets: "5", reps: "10"},
     { name: "Dumbell Curls", sets: "4", reps: "15"},
     { name: "Hammer Curls", set: "3", reps: "12"},
-      { name: "Kickback and Dip Superset", set:"3", reps: "12"},
+      { name: "Kickback and Dip Superset", set: "3", reps: "12"},
    
   ],
- "Ryan Renolds": [
-    { name: "Pull-ups", sets: "3", reps: "Until Failure"},
-    { name: "Dips", sets: "3", reps: "Until Failure"},
-    { name: "Weighted Lunges", sets: "3", reps: "10 per leg"},
-    { name: "Dumbbell Overhead Press", set: "3", reps: "8-12"},
-   
-  ],
- "Scarlett Johansson": [
-    { name: "Medicine Ball Slams", sets: "3", reps: "10-12"},
-    { name: "Kettlebell Swings", sets: "3", reps: "12-15"},
-    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "10-15"},
-    { name: "Push-ups", set: "3", reps: "Until Failure"},
-   
-  ],
-"Sofia Vergara": [
-    { name: "Bodyweight Squats", sets: "3", reps: "15"},
-    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "12 per leg"},
-    { name: "Dumbell Shoulder Press", sets: "3", reps: "10-12"},
-    { name: "Planks with leg lifts", set: "3", reps: "30 seconds"},
-   
-  ],
-"Chris Pratt": [
+ "Chris Hemsworth": [
     { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Barbell Rows", sets: "4", reps: "8-12"},
-    { name: "Overhead Press", sets: "3", reps: "10-15"},
-    { name: "Weighted Lunges", set: "3", reps: "12 reps per leg"},
- 
-  ],
- "Zendaya": [
-    { name: "Planks", sets: "3", reps: "30 seconds"},
-    { name: "Glute Bridges", sets: "3", reps: "15"},
-    { name: "Dumbell Romanian Deadlifts", sets: "3", reps: "10 per leg"},
-    { name: "Push-ups", set: "3", reps: "until Failure"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
    
   ],
- "Kerry Washington": [
-    { name: "Push-ups", sets: "3", reps: "Until Faliure"},
-    { name: "Squats", sets: "3", reps: "15"},
-    { name: "Lunges", sets: "3", reps: "10"},
-    { name: "Burpees", set: "3", reps: "10"},
-  
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
+   
   ],
- "Olivia Munn": [
-    { name: "Dumbell Bench Press", sets: "3", reps: "10-12"},
-    { name: "Squats With Kettlebell", sets: "3", reps: "12"},
-    { name: "Dumbbell Romanian Deadlifts", sets: "3", reps: "10 per leg"},
-    { name: "Pilates Ball bridges", set: "3", reps: "15"},
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
+   
+  ],
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
+   
+  ],
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
+   
+  ],
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
+   
+  ],
+ "Chris Hemsworth": [
+    { name: "Bench Press", sets: "4", reps: "8-12"},
+    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15"},
+    { name: "Tricep Pushdowns", sets: "3", reps: "12-15"},
+    { name: "Running", set: "1", reps: "30 minutes"},
    
   ]
 };
