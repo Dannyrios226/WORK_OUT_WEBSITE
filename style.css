@@ -20,7 +20,7 @@ body {
     text-align: center;
     margin: 0;
     font-size: 8em;
-    font-family: "Helvetica";
+    font-family: "Stencil Std, fantasy";
     font-weight: normal;
     color: white;
 }
@@ -74,5 +74,6 @@ button {
     font-size: 22px;
     cursor: pointer;
     margin: 5px;
+    font-family: "Stencil Std, fantasy";
 }
 
