@@ -93,7 +93,7 @@ const pushExercises = {
      { name: "Overhead Tricep Extentions", difficulty: "beginner" },
      { name: "Seated Tricep Dips", difficulty: "beginner" },
      { name: "Close-Grip Bench Press", difficulty: "Intermediate" },
-     { name: "Decline Skull Crushers", difficulty: "Intermediate" },
+     // { name: "Decline Skull Crushers", difficulty: "Intermediate" },
      // { name: "Lying Tricep Extensions", difficulty: "Intermediate" },
      // { name: "Rope Pushdowns", difficulty: "Intermediate" },
      // { name: "Bar Pushdowns", difficulty: "beginner" },
