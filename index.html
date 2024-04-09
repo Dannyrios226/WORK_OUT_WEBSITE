@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="main-header">
-        <h1 class="title">GYM WORKOUTS</h1>
+        <h1 class="title">GYM WORKOUT ROUTINES</h1>
     </header>
     <div id="card-container">  
         
@@ -19,16 +19,12 @@
             <img src="" alt="TV Show Poster">
             <ul>
                 <li>Bullet Point 1</li>
-                <li> <li>Bullet Point 2</li> 
-                <li> <li>Bullet Point 3</li>
+                <li>Bullet Point 2</li>
+                <li>Bullet Point 3</li>
             </ul>
         </div>
     </div>
     <div class="footer">
-         <input type="text" id="search-input" placeholder="Search Card Exercises " >
-        <button onclick="searchExercises(document.getElementById('search-input').value)">
-            Search
-        </button>
         <button onclick="displayPushWorkout();">
             Push Workout
         </button>
@@ -44,11 +40,15 @@
          <button onclick="displayRandomMixedWorkout()">
           Random Mixed Workout
         </button>
+        <button onclick="">
+          Start Rest Timer
+        </button>
         <button onclick="displayRandomCelebrityWorkout();">
             Get a Random Celeb Workout 
         </button>
-        <button onclick="quoteAlert();">
-            Click For A Surpise
+        <input type="text" id="search-input" placeholder="Search Card Exercises " >
+        <button onclick="searchExercises(document.getElementById('search-input').value)">
+            Search
         </button>
     </div>
 </body>
