@@ -160,7 +160,7 @@ const cardioExercises = {
     { name: "15-minute Stair Running", difficulty: "Intermediate" },
    
   ],
-  "30-minute": [
+  "20-minute": [
     { name: "20-minute jogging", difficulty: "Intermediate" },
     { name: "20-minute rowing", difficulty: "beginner" },
     { name: "20-minute Elliptical", difficulty: "Intermediate" },
@@ -169,7 +169,7 @@ const cardioExercises = {
     { name: "20-minute Elliptical", difficulty: "Intermediate" },
     
   ],
-  "45-minute": [
+  "30-minute": [
     { name: "30-minute Swimming", difficulty: "Intermediate" },
     { name: "30-minute biking", difficulty: "Intermediate" },
     { name: "30-minute walking", difficulty: "beginer" },
@@ -466,7 +466,7 @@ function displayLegWorkout() {
 //randomize Cardio workouts
 function getRandomCardioExercises() {
  const randomExercises = [];
- const durations = ["15-minute", "30-minute", "45-minute"];
+ const durations = ["15-minute", "20-minute", "30-minute"];
  const randomDuration = durations[Math.floor(Math.random() * durations.length)];
  const exercises = cardioExercises[randomDuration];
  for (let i = 0; i < 2; i++) {
