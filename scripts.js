@@ -13,7 +13,6 @@
  * 11. add info on workouts and what to do for them maybe a link to a short youtube video explaining what to do 
  * 12. fix alert only showing a limited amount of Lines 
  */
-
 const PUSH_URL = "https://m.media-amazon.com/images/I/71d3CdMuJSL._AC_SY879_.jpg";
 const PULL_URL = "https://m.media-amazon.com/images/I/71A2z2zdGSL._AC_SY879_.jpg";
 const LEGS_URL = "https://m.media-amazon.com/images/I/71bU71azUZL._AC_SY879_.jpg";
@@ -152,343 +151,41 @@ const legExercises = {
 };
 const cardioExercises = {
     "15-minute": [
-        { name: "15-min Jump Rope", difficulty: "Beginner" },
-        { name: "15-min High Knees", difficulty: "Beginner" },
-        { name: "15-min Burpees", difficulty: "Intermediate" },
-     { name: "15-min Jumping Jacks", difficulty: "Beginner" },
-        { name: "15-min Tabata Sprints", difficulty: "Intermediate" },
-        { name: "15-min Stair Running", difficulty: "Intermediate" },
-     
+        { name: "Jump Rope", difficulty: "Beginner" },
+        { name: "High Knees", difficulty: "Beginner" },
+        { name: "Burpees", difficulty: "Intermediate" },
+     { name: "Jumping Jacks", difficulty: "Beginner" },
+        { name: "Tabata Sprints", difficulty: "Intermediate" },
+        { name: "Stair Running", difficulty: "Intermediate" },
+
     ],
     "30-minute": [
-        { name: "30-minute jogging", difficulty: "Intermediate" },
-        { name: "30-minute rowing", difficulty: "beginner" },
-        { name: "30-minute Elliptical", difficulty: "Intermediate" },
-      { name: "30-minute Mountain Climbers", difficulty: "Intermediate" },
-        { name: "30-minute Butt Kicks", difficulty: "Intermediate" },
-        { name: "30-minute Elliptical", difficulty: "Intermediate" },
-      
+        { name: "jogging", difficulty: "Intermediate" },
+        { name: "rowing", difficulty: "beginner" },
+        { name: "Elliptical", difficulty: "Intermediate" },
+      { name: "Mountain Climbers", difficulty: "Intermediate" },
+        { name: "Butt Kicks", difficulty: "Intermediate" },
+        { name: "Elliptical", difficulty: "Intermediate" },
+
     ],
     "45-minute": [
-        { name: "45-minute Swimming", difficulty: "Intermediate" },
-        { name: "45-minute biking", difficulty: "Intermediate" },
-        { name: "45-minute walking", difficulty: "beginer" },
-        { name: "45-minute Hiking", difficulty: "Intermediate" },
-        { name: "45-minute BasketBall", difficulty: "Intermediate" },
-        { name: "45-minute Boxing", difficulty: "Intermediate" },
+        { name: "Swimming", difficulty: "Intermediate" },
+        { name: "biking", difficulty: "Intermediate" },
+        { name: "walking", difficulty: "beginer" },
+        { name: "Hiking", difficulty: "Intermediate" },
+        { name: "BasketBall", difficulty: "Intermediate" },
+        { name: "Boxing", difficulty: "Intermediate" },
     ]
 };
 
-const celebrityWorkoutData = {
- "Chris Hemsworth": [
-    { name: "Bench Press", sets: "4", reps: "8-12" },
-    { name: "Incline Dumbbell Press", sets: "3", reps: "10-15" },
-    { name: "Tricep Pushdowns", sets: "3", reps: "12-15" },
-    { name: "Running", sets: "1", reps: "30 minutes" },
-  
-  ],
-   "Halle Berry": [
-    { name: "Squats", sets: "3", reps: "15-20"},
-    { name: "Push-Ups", sets: "3", reps: "10-15"},
-    { name: "Lunges", sets: "3", reps: "10 per leg"},
-    { name: "Running", sets: "1", reps: "30 minutes"},
-   
-  ],
-  "Dwayne 'The Rock' Johnson": [
-    { name: "Barbell Squats", sets: "5", reps: "5-8"},
-    { name: "Leg Press", sets: "3", reps: "10-12"},
-    { name: "Pull ups", sets: "1", reps: "Until Failure"},
-    { name: "Stair Sprints", sets: "5", reps:"30 seconds work, 30 seconds rest"},
-   
-  ],
- "Serena Williams": [
-    { name: "Medicine Ball Slams", sets: "3", reps: "10"},
-    { name: "Box Jumps", sets: "3", reps: "5"},
-    { name: "Explosive Push-Ups", sets: "3", reps: "Until Failure"},
-    { name: "Sprints", sets: "6", reps: "100 meters"},
-   
-  ],
-  "J-Lo": [
-    { name: "Bicep Curls", sets: "3", reps: "8-10" }, 
-    { name: "Lunges", sets: "3", reps: "8-10" },
-    { name: "Push Ups", sets: "3", reps: "8-10" },
-    { name: "Kettle Bell Swings", sets: "3", reps: "8-10" },
-    { name: "Sitting Hip Thrusts", sets: "3", reps: "8-10" },
-   
-  ],
-  "Beyonce": [
-    { name: "Explosive Push Ups", sets: "3", reps: "8-10" },
-    { name: "Sprints", sets: "8", reps: "30 seconds" }, 
-    { name: "Kettlebell Squats and Press", sets: "3", reps: "8-10" },
-    { name: "Ab Crunches", sets: "3", reps: "8-10" },
-   
-  ],
- "Vanessa Hudgens": [
-    { name: "Plank Walk Outs", sets: "2-3", reps: "8-10"},
-    { name: "Band Squats", sets: "2-3", reps: "8-10"},
-    { name: "High Knees", sets: "2-3", reps: "8-10"},
-    { name: "Weighted Deadlifts", sets: "2-3", reps: "8-10"},
-    { name: "Back Squats", sets: "2-3", reps: "8-10"},
-   
-  ],
- "Cindy Crawford": [
-    { name: "Weighted Squats", sets: "3", reps: "8-10"},
-    { name: "Weighted Lunges", sets: "3", reps: "8-10"},
-    { name: "Weighted Rows", sets: "3", reps: "12-15"},
-    { name: "Sprinting", sets: "3", reps: "5 minutes"},
-     { name: "Plank", sets: "3", reps: "1 minute"},
-   
-  ],
- "Rebel Wilson": [
-    { name: "reverse lunges", sets: "3-4", reps: "8-10"},
-    { name: "One-legged Dead Lifts", sets: "3-4", reps: "8-10"},
-    { name: "Push-ups", sets: "3-4", reps: "8-10"},
-    { name: "Rows", sets: "3-4", reps: "8-10"},
-    { name: "Kettle Bell Swings", sets: "3-4", reps: "8-10"},
-   
-  ],
- "Blake Lively": [
-    { name: "Bench Press", sets: "4", reps: "8-10"},
-    { name: "Incline Dumbbell Press", sets: "3", reps: "8-10"},
-    { name: "Tricep Pushdowns", sets: "3", reps: "8-10"},
-    { name: "Running", sets: "1", reps: "8-10"},
-   
-  ],
- "Ariana Grande": [
-    { name: "Glute Bridge Skull Crushers", sets: "3", reps: "25"},
-    { name: "Standing Rope Tricep Extensions", sets: "3", reps: "25"},
-    { name: "Dumbell T-raises", sets: "3", reps: "25"},
-    { name: "Standing Cable Reverse Flys", sets: "3", reps: "25"},
-   
-  ],
- "Khloe Kardashian": [
-    { name: "Overhead Crunch Rotations", sets: "4", reps: "20"},
-    { name: "4x4 Walks", sets: "4", reps: "20"},
-    { name: "Renegade Row Mountain Clibers", sets: "4", reps: "20"},
-    { name: "Dumbell Presses", sets: "4", reps: "20"},
-    { name: "Reverse Lunge Press", sets: "4", reps: "20"},
-   
-  ],
- "Michael B. Jordan": [
-    { name: "Crunches", sets: "3-5", reps: "25"},
-    { name: "Leg Raises", sets: "3-5", reps: "25"},
-    { name: "Reverse Crunches", sets: "3-5", reps: "25"},
-    { name: "Toe Touches", sets: "3-5", reps: "25"},
-      { name: "Press and Push-ups Super Set", sets: "5", reps: "10"},
-    { name: "Fly and Push-up Super Set", sets: "5", reps: "10"},
-    { name: "Dumbell Curls", sets: "4", reps: "15"},
-    { name: "Hammer Curls", sets: "3", reps: "12"},
-      { name: "Kickback and Dip Superset", sets: "3", reps: "12"},
-   
-  ],
- "Scarlett Johansson": [
-    { name: "Medicine Ball Slams", sets: "3", reps: "10-12"},
-    { name: "Kettle Bell Swings", sets: "3", reps: "12-15"},
-    { name: "Box Jumps", sets: "3", reps: "8"},
-    { name: "Push-ups", sets: "3", reps: "10"},
-   
-  ],
- "Sofia Vergara": [
-    { name: "Bodyweight Squats", sets: "3", reps: "15"},
-    { name: "Romanian Dumbbell Deadlifts", sets: "3", reps: "12 mper leg"},
-    { name: "Planks with leg lifts", sets: "3", reps: "30 seconds"},
-    { name: "Dumbbell Shoulder Press", sets: "1", reps: "10-12"},
-   
-  ],
- "Chris Pratt": [
-    { name: "Bench Press", sets: "4", reps: "8-12"},
-    { name: "Barbell Rows", sets: "4", reps: "8-12"},
-    { name: "Overhead Press", sets: "3", reps: "10-15"},
-    { name: "Weighted Lunges", sets: "3", reps: "12"},
-   
-  ],
- "Zendaya": [
-    { name: "Planks", sets: "3", reps: "30 seconds"},
-    { name: "Glute Bridges", sets: "3", reps: "15"},
-    { name: "Dumbbell Romanian lifts", sets: "3", reps: "10"},
-    { name: "Running", sets: "1", reps: "30 minutes"},
-   
-  ],
- "Kerry Washington": [
-    { name: "Push-ups", sets: "4", reps: "8-12"},
-    { name: "Squats", sets: "3", reps: "10-12"},
-    { name: "lunges", sets: "3", reps: "12-14"},
-    { name: "Burpees", sets: "1", reps: "10"},
-   
-  ],
- "Olivia Munn": [
-    { name: "Pilates Ball Bridge", sets: "4", reps: "10-12"},
-    { name: "Squats with kettle bell", sets: "3", reps: "12"},
-    { name: "Dumbell Bench Press", sets: "3", reps: "10-12"},
-    { name: "Running", sets: "1", reps: "30 minutes"},
-   
-  ],
- "Keanu Reeves": [
-    { name: "Pull-Ups", sets: "4", reps: "Max Reps" },
-    { name: "Dumbbell Rows", sets: "3", reps: "10-12" },
-    { name: "Dips", sets: "3", reps: "Until Failure" },
-    { name: "Weighted Lunges", sets: "3", reps: "12 per leg" },
-    { name: "Battle Ropes", sets: "3", reps: "30 seconds work, 30 seconds rest" },
-  ]
-};
-//====================================================================
-
-// END OF DATA
-
-//====================================================================
-
-// This function adds cards the page to display the data in the array
-function showCards() {
-  const cardContainer = document.getElementById("card-container");
-  cardContainer.innerHTML = "";
-  const templateCard = document.querySelector(".card");
-  for (let i = 0; i < workoutData.length; i++) {
-    const workout = workoutData[i]; // Access each workout object
-    const nextCard = templateCard.cloneNode(true);
-    editCardContent(nextCard, workout.title, workout.imageURL);
-    addBulletPoints(nextCard, workout.bulletPoints); // Pass bulletPoints array
-    cardContainer.appendChild(nextCard);
-  }
-}
-function addBulletPoints(card, bulletPoints) {
-  const ul = card.querySelector("ul");
-  ul.innerHTML = "";
-  bulletPoints.forEach(point => {
-    const li = document.createElement("li");
-    li.textContent = point;
-    ul.appendChild(li);
-  });
-}
- document.addEventListener("DOMContentLoaded", showCards);      
-function editCardContent(card, newTitle, newImageURL) {
-    card.style.display = "block";
-    const cardHeader = card.querySelector("h2");
-    cardHeader.textContent = newTitle;
-    const cardImage = card.querySelector("img");
-    cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
-    console.log("new card:", newTitle, "- html: ", card);
-}
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
-function quoteAlert() {
-    console.log("Button Clicked!")
-    alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
-}
-function removeLastCard() {
-    titles.pop(); // Remove last item in titles array
-    showCards(); // Call showCards again to refresh
-}
-//randomize Push workouts
-function getRandomPushExercises() {
-  const randomExercises = [];
-  const categories = ["chest", "triceps", "shoulders"];
- 
-  for (let i = 0; i < categories.length; i++) {
-    const category = categories[i];
-    const exercises = pushExercises[category];
-   
-    const randomIndex = Math.floor(Math.random() * exercises.length);
-   
-    randomExercises.push(exercises[randomIndex]);
-  
-    if (randomExercises.length >= 4) {
-      break;
-    }
-  }
-  
-  return randomExercises.slice(0, 4);
-}
-// Display Push workouts with alert
-function displayPushWorkout() {
-  const randomExercises = getRandomPushExercises();
-  // Build a string to display all exercises in the alert
-  let workoutMessage = "Your Push Workout:\n\n";
-  for (let i = 0; i < randomExercises.length; i++) {
-    const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
-  }
-  alert(workoutMessage);
-}
-//randomize Pull workouts
-function getRandomPullExercises() {
-  const randomExercises = [];
-  const categories = ["back", "biceps", "traps"];
-  for (let i = 0; i < categories.length; i++) {
-    const category = categories[i];
-    const exercises = pullExercises[category];
-    const randomIndex = Math.floor(Math.random() * exercises.length);
-    randomExercises.push(exercises[randomIndex]);
-    if (randomExercises.length >= 4) {
-      break;
-    }
-  }
-  return randomExercises.slice(0, 4);
-}
-// Display Pull workouts with alert
-function displayPullWorkout() {
-  const randomExercises = getRandomPullExercises();
-  let workoutMessage = "Your Pull Workout:\n\n";
-  for (let i = 0; i < randomExercises.length; i++) {
-    const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
-  }
-  alert(workoutMessage);
-}
-//randomize leg workouts
-function getRandomLegExercises() {
-  const randomExercises = [];
-  const categories = ["quads", "hamstrings", "glutes"];
-  for (let i = 0; i < categories.length; i++) {
-    const category = categories[i];
-    const exercises = legExercises[category];
-    const randomIndex = Math.floor(Math.random() * exercises.length);
-    randomExercises.push(exercises[randomIndex]);
-    if (randomExercises.length >= 4) {
-      break;
-    }
-  }
-  return randomExercises.slice(0, 4);
-}
-// Display Leg workouts with alert
-function displayLegWorkout() {
-  const randomExercises = getRandomLegExercises();
-  let workoutMessage = "Your Leg Workout:\n\n";
-  for (let i = 0; i < randomExercises.length; i++) {
-    const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
-  }
-  alert(workoutMessage);
-}
-//randomize Cardio workouts
-function getRandomCardioExercises() {
-  const randomExercises = [];
-  const durations = ["15-minute", "30-minute", "45-minute"];
-  const randomDuration = durations[Math.floor(Math.random() * durations.length)];
-  const exercises = cardioExercises[randomDuration];
-  for (let i = 0; i < 2; i++) {
-    const randomIndex = Math.floor(Math.random() * exercises.length);
-    randomExercises.push(exercises[randomIndex]);
-  }
-  return randomExercises;
-}
-// Display Cardio workouts with alert
-function displayCardioWorkout() {
-  const randomExercises = getRandomCardioExercises();
+	@@ -481,7 +481,7 @@ function displayCardioWorkout() {
   let workoutMessage = "Your Cardio Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
-    workoutMessage += `- ${exercise.name} (Difficulty: ${randomExercises.difficulty) \n`;
+    workoutMessage += `- ${exercise.name} (for ${randomExercises[0].name.split(" ")[0]}) \n`; // Assuming first exercise defines duration
   }
-
   alert(workoutMessage);
 }
-
-
-
 function getCategoryExercises(category) {
   switch (category) {
     case "push":
@@ -504,69 +201,53 @@ function getCategoryExercises(category) {
       return []; 
   }
 }
-
 function getRandomMixedWorkout() {
   const workoutCategories = ["push", "pull", "legs", "cardio"];
   const randomExercises = [];
-
   // Ensure at least one exercise from each category is included
   for (const category of workoutCategories) {
     const exercises = getCategoryExercises(category); 
     const randomIndex = Math.floor(Math.random() * exercises.length);
     randomExercises.push(exercises[randomIndex]);
   }
-
-
   while (randomExercises.length < 4) {
     const randomIndex = Math.floor(Math.random() * workoutCategories.length);
     const category = workoutCategories[randomIndex];
     const exercises = getCategoryExercises(category);
     const additionalIndex = Math.floor(Math.random() * exercises.length);
-
-
     if (!randomExercises.some(ex => ex.name === exercises[additionalIndex].name)) {
       randomExercises.push(exercises[additionalIndex]);
     }
   }
-
   return randomExercises;
 }
-
 function displayRandomMixedWorkout() {
   const randomExercises = getRandomMixedWorkout();
-
   let workoutMessage = "Your Random Mixed Workout:\n\n";
   for (let i = 0; i < randomExercises.length; i++) {
     const exercise = randomExercises[i];
     workoutMessage += `- ${exercise.name} (Difficulty: ${exercise.difficulty})\n`;
   }
-
   alert(workoutMessage);
 }
-
 function getRandomCelebrity() {
   const celebrityNames = Object.keys(celebrityWorkoutData);
   const randomIndex = Math.floor(Math.random() * celebrityNames.length);
   return celebrityNames[randomIndex];
 }
-
 function displayRandomCelebrityWorkout() {
   const celebrity = getRandomCelebrity();
   const celebrityWorkout = celebrityWorkoutData[celebrity];
   
   let workoutMessage = `**${celebrity}'s Workout:**\n\n`;
-
   for (const exercise of celebrityWorkout) {
     workoutMessage += `- ${exercise.name} (Sets: ${exercise.sets}, Reps: ${exercise.reps})\n`;
   }
-
   alert(workoutMessage);
 }
-
 function searchExercises(searchTerm) {
   searchTerm = searchTerm.toLowerCase(); // Ensure case-insensitive search
   let exerciseMessage = "";
-
   switch (searchTerm) {
     case "push":
     case "PUSH":
@@ -587,7 +268,6 @@ function searchExercises(searchTerm) {
     default:
       exerciseMessage = "Invalid search term. Please enter 'push', 'pull', 'legs', or 'cardio'.";
   }
-
   alert(exerciseMessage);
 }
     
@@ -603,6 +283,6 @@ function buildExerciseMessage(exerciseData) {
 }
 function quoteAlert() {
     console.log("Button Clicked!")
-    alert("To anyone and everyone who reads this, You are special and you are the main character in the amazing movie you call life. Have a wonderful day and keep on shining");
+    alert("To anyone and Everyone who reads this, You are special and you are the main character in the amazing movie you call life. Have a wonderful day and keep on shining");
 }
-                                  
+              
