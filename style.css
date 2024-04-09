@@ -23,7 +23,6 @@ body {
     justify-content: center;
     margin: 20px;
     text-align: center;
-     display: flex;
     align-items: center;
 }
 
@@ -60,7 +59,7 @@ body {
 
 button {
     text-align: center;
-    background-color: ##212F3D;
+    background-color: ##777;
     border: none;
     padding-left: 10px;
     padding-right: 10px;
