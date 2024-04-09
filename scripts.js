@@ -601,4 +601,8 @@ function buildExerciseMessage(exerciseData) {
   }
   return message;
 }
+function quoteAlert() {
+    console.log("Button Clicked!")
+    alert("To anyone and Everyone who reads this, You are special and you are the main character in the amazing movie you call life. Have a wonderful day and keep on shining");
+}
                                   
